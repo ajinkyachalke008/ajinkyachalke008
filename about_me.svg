@@ -1,218 +1,228 @@
-<svg width="820" height="390" viewBox="0 0 820 390" xmlns="http://www.w3.org/2000/svg">
+<svg width="820" height="400" viewBox="0 0 820 400" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <style>
-.t{font-size:13.5px;'Courier New',Courier,monospace}
-.lbl{fill:#00d4ff;font-weight:bold}
-.prompt{fill:#f97316;font-weight:bold}
-.cursor{fill:#00FF41;animation:blink 1s step-end infinite}
-.scanline{fill:none;stroke:#00FF41;stroke-width:1;opacity:0.07;animation:scan 4s linear infinite}
-.glow{filter:drop-shadow(0 0 4px #00FF41)}
-.border{fill:none;stroke:#00FF41;stroke-width:1;opacity:0.25}
-@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes scan{0%{transform:translateY(0)}100%{transform:translateY(390px)}}
-@keyframes flicker{0%,96%,100%{opacity:1}97%{opacity:0.4}}
+@keyframes blink   { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+@keyframes scan    { 0%{transform:translateY(44px)} 100%{transform:translateY(400px)} }
+@keyframes glow    { 0%,100%{filter:drop-shadow(0 0 3px #00d4ff)} 50%{filter:drop-shadow(0 0 8px #00d4ff) drop-shadow(0 0 14px #00d4ff)} }
+@keyframes glowG   { 0%,100%{filter:drop-shadow(0 0 3px #00FF41)} 50%{filter:drop-shadow(0 0 9px #00FF41) drop-shadow(0 0 18px #00FF41)} }
+@keyframes pulse   { 0%,100%{opacity:1} 50%{opacity:0.6} }
+@keyframes flicker { 0%,94%,96%,100%{opacity:1} 95%{opacity:0.3} }
+@keyframes slide   { 0%{stroke-dashoffset:100} 100%{stroke-dashoffset:0} }
 </style>
-<!-- clip paths for each line -->
 
-<clipPath id="c0">
-  <rect x="0" y="0" height="24" width="0">
-    <animate attributeName="width" from="0" to="780" dur="0.7s" begin="0.4s" fill="freeze"/>
-  </rect>
-</clipPath>
+<!-- Outer glow gradient -->
+<filter id="outerGlow">
+  <feGaussianBlur stdDeviation="3" result="blur"/>
+  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="greenGlow">
+  <feGaussianBlur stdDeviation="2.5" result="blur"/>
+  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
 
-<clipPath id="c1">
-  <rect x="0" y="0" height="24" width="0">
-    <animate attributeName="width" from="0" to="780" dur="0.7s" begin="1.3s" fill="freeze"/>
-  </rect>
-</clipPath>
-
-<clipPath id="c2">
-  <rect x="0" y="0" height="24" width="0">
-    <animate attributeName="width" from="0" to="780" dur="0.7s" begin="2.2s" fill="freeze"/>
-  </rect>
-</clipPath>
-
-<clipPath id="c3">
-  <rect x="0" y="0" height="24" width="0">
-    <animate attributeName="width" from="0" to="780" dur="0.7s" begin="3.1s" fill="freeze"/>
-  </rect>
-</clipPath>
-
-<clipPath id="c4">
-  <rect x="0" y="0" height="24" width="0">
-    <animate attributeName="width" from="0" to="780" dur="0.7s" begin="4.0s" fill="freeze"/>
-  </rect>
-</clipPath>
-
-<clipPath id="c5">
-  <rect x="0" y="0" height="24" width="0">
-    <animate attributeName="width" from="0" to="780" dur="0.7s" begin="4.9s" fill="freeze"/>
-  </rect>
-</clipPath>
-
-<clipPath id="c6">
-  <rect x="0" y="0" height="24" width="0">
-    <animate attributeName="width" from="0" to="780" dur="0.7s" begin="5.800000000000001s" fill="freeze"/>
-  </rect>
-</clipPath>
-
-<clipPath id="c7">
-  <rect x="0" y="0" height="24" width="0">
-    <animate attributeName="width" from="0" to="780" dur="0.7s" begin="6.7s" fill="freeze"/>
-  </rect>
-</clipPath>
-
+<!-- Background gradient -->
+<linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#0a0e1a"/>
+  <stop offset="100%" stop-color="#060912"/>
+</linearGradient>
 </defs>
 
-<!-- Background -->
-<rect width="820" height="390" fill="#0a0e1a" rx="10"/>
+<!-- Main background -->
+<rect width="820" height="400" fill="url(#bgGrad)" rx="12"/>
 
-<!-- Outer glow border -->
-<rect class="border" x="1" y="1" width="818" height="388" rx="9"/>
-<rect class="border" x="3" y="3" width="814" height="384" rx="8" style="opacity:0.12"/>
+<!-- Outer border glow -->
+<rect x="1" y="1" width="818" height="398" fill="none" stroke="#00FF41"
+  stroke-width="1.5" rx="11" opacity="0.5" style="animation:pulse 3s ease-in-out infinite"/>
+<rect x="3" y="3" width="814" height="394" fill="none" stroke="#00FF41"
+  stroke-width="0.5" rx="10" opacity="0.15"/>
 
 <!-- Title bar -->
-<rect x="0" y="0" width="820" height="38" fill="#0d1117" rx="10"/>
-<rect x="0" y="28" width="820" height="10" fill="#0d1117"/>
+<rect x="0" y="0" width="820" height="44" fill="#0d1117" rx="12"/>
+<rect x="0" y="34" width="820" height="10" fill="#0d1117"/>
 
-<!-- Traffic lights -->
-<circle cx="20" cy="19" r="6" fill="#ff5f56"/>
-<circle cx="38" cy="19" r="6" fill="#ffbd2e"/>
-<circle cx="56" cy="19" r="6" fill="#27c93f"/>
+<!-- Window dots -->
+<circle cx="22" cy="22" r="7" fill="#ff5f56"/>
+<circle cx="44" cy="22" r="7" fill="#ffbd2e"/>
+<circle cx="66" cy="22" r="7" fill="#27c93f"/>
 
-<!-- Title -->
-<text x="410" y="23" text-anchor="middle" fill="#475569" font-family="'Courier New',Courier,monospace" font-size="11">
-  ajinkya@devbox:~$ cat developer_profile.json
+<!-- Title bar text -->
+<text x="410" y="26" text-anchor="middle" fill="#64748b" font-family="'Courier New',Courier,monospace" font-size="11.5">
+  ajinkya@devbox:~/developer-profile.json
 </text>
 
-<!-- Divider line -->
-<line x1="0" y1="38" x2="820" y2="38" stroke="#00FF41" stroke-width="0.5" opacity="0.3"/>
+<!-- Corner tag -->
+<rect x="730" y="8" width="82" height="20" rx="4" fill="#0a1628" stroke="#00FF41" stroke-width="0.5" opacity="0.7"/>
+<text x="771" y="22" text-anchor="middle" fill="#00FF41" font-family="'Courier New',Courier,monospace" font-size="9.5">SYS:ONLINE ●</text>
 
-<!-- Scanline moving effect -->
-<line class="scanline" x1="0" y1="0" x2="820" y2="0"/>
+<!-- Divider -->
+<line x1="0" y1="44" x2="820" y2="44" stroke="#00FF41" stroke-width="0.8" opacity="0.4"/>
 
-<!-- Opening brace -->
-<text class="{t glow}" x="20" y="54" fill="#00FF41" font-family="'Courier New',Courier,monospace" font-size="14">&#123;</text>
+<!-- Moving scanline (decorative, always running) -->
+<rect width="820" height="2" fill="#00FF41" opacity="0.04" rx="1"
+  style="animation:scan 5s linear infinite"/>
 
+<!-- Opening JSON brace -->
+<text x="18" y="64" font-family="'Courier New',Courier,monospace" font-size="15" fill="#00FF41" opacity="0.9"
+  style="animation:glowG 2.5s ease-in-out infinite">&#123;</text>
 
-  <!-- Line 0: scramble then real -->
-  <text class="t" x="38" y="68" fill="#1a4a2e" font-family="'Courier New',Courier,monospace" font-size="12" opacity="0">
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.01;0.6;1" dur="0.65s" begin="0.10000000000000003s" fill="freeze"/>
-    <tspan class="prompt">▶ </tspan><tspan class="lbl">IDENTIFY  </tspan><tspan fill="#1a6630">4J1NK!4_Ch4lK3_@AC</tspan>
-  </text>
+  <!-- Line 1 -->
+  <text x="18" y="82" font-family="'Courier New',Courier,monospace" font-size="11" fill="#1e3a2f" opacity="0.6">01</text>
 
-  <!-- Real line with clip reveal -->
-  <g clip-path="url(#c0)">
-    <text class="t" x="38" y="68" font-family="'Courier New',Courier,monospace" font-size="13.5">
-      <tspan fill="#f97316">▶ </tspan><tspan fill="#00d4ff">IDENTIFY  </tspan><tspan fill="#58a6ff">  Ajinkya Chalke</tspan>
-    </text>
-  </g>
+  <!-- Prompt arrow -->
+  <text x="40" y="82" font-family="'Courier New',Courier,monospace" font-size="13.5" fill="#f97316" font-weight="bold">▶</text>
 
-  <!-- Line 1: scramble then real -->
-  <text class="t" x="38" y="104" fill="#1a4a2e" font-family="'Courier New',Courier,monospace" font-size="12" opacity="0">
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.01;0.6;1" dur="0.65s" begin="1.0s" fill="freeze"/>
-    <tspan class="prompt">▶ </tspan><tspan class="lbl">ROLE      </tspan><tspan fill="#1a6630">Fu11-$t@ck_3nG·4l_4rCh1T3cT</tspan>
-  </text>
+  <!-- Label with cyan glow animation -->
+  <text x="60" y="82" font-family="'Courier New',Courier,monospace" font-size="13" fill="#00d4ff" font-weight="bold"
+    style="animation:glow 2.0s ease-in-out infinite">IDENTIFY</text>
 
-  <!-- Real line with clip reveal -->
-  <g clip-path="url(#c1)">
-    <text class="t" x="38" y="104" font-family="'Courier New',Courier,monospace" font-size="13.5">
-      <tspan fill="#f97316">▶ </tspan><tspan fill="#00d4ff">ROLE      </tspan><tspan fill="#e2e8f0">  Full-Stack Eng · AI Architect · Cybersec</tspan>
-    </text>
-  </g>
+  <!-- Separator -->
+  <text x="130" y="82" font-family="'Courier New',Courier,monospace" font-size="13" fill="#334155"> : </text>
 
-  <!-- Line 2: scramble then real -->
-  <text class="t" x="38" y="140" fill="#1a4a2e" font-family="'Courier New',Courier,monospace" font-size="12" opacity="0">
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.01;0.6;1" dur="0.65s" begin="1.9000000000000001s" fill="freeze"/>
-    <tspan class="prompt">▶ </tspan><tspan class="lbl">BASE      </tspan><tspan fill="#1a6630">K4R4D_M4H4R45HT12A_1ND14</tspan>
-  </text>
+  <!-- Value -->
+  <text x="154" y="82" font-family="'Courier New',Courier,monospace" font-size="13" fill="#58a6ff">Ajinkya Chalke,</text>
 
-  <!-- Real line with clip reveal -->
-  <g clip-path="url(#c2)">
-    <text class="t" x="38" y="140" font-family="'Courier New',Courier,monospace" font-size="13.5">
-      <tspan fill="#f97316">▶ </tspan><tspan fill="#00d4ff">BASE      </tspan><tspan fill="#e2e8f0">  Karad, Maharashtra, India  🇮🇳</tspan>
-    </text>
-  </g>
+  <!-- Line 2 -->
+  <text x="18" y="118" font-family="'Courier New',Courier,monospace" font-size="11" fill="#1e3a2f" opacity="0.6">02</text>
 
-  <!-- Line 3: scramble then real -->
-  <text class="t" x="38" y="176" fill="#1a4a2e" font-family="'Courier New',Courier,monospace" font-size="12" opacity="0">
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.01;0.6;1" dur="0.65s" begin="2.8000000000000003s" fill="freeze"/>
-    <tspan class="prompt">▶ </tspan><tspan class="lbl">COLLEGE   </tspan><tspan fill="#1a6630">GC3K--G0vT.C0LL3G3.0F.3NG</tspan>
-  </text>
+  <!-- Prompt arrow -->
+  <text x="40" y="118" font-family="'Courier New',Courier,monospace" font-size="13.5" fill="#f97316" font-weight="bold">▶</text>
 
-  <!-- Real line with clip reveal -->
-  <g clip-path="url(#c3)">
-    <text class="t" x="38" y="176" font-family="'Courier New',Courier,monospace" font-size="13.5">
-      <tspan fill="#f97316">▶ </tspan><tspan fill="#00d4ff">COLLEGE   </tspan><tspan fill="#94a3b8">  GCEK — Govt. College of Engineering</tspan>
-    </text>
-  </g>
+  <!-- Label with cyan glow animation -->
+  <text x="60" y="118" font-family="'Courier New',Courier,monospace" font-size="13" fill="#00d4ff" font-weight="bold"
+    style="animation:glow 2.3s ease-in-out infinite">ROLE</text>
 
-  <!-- Line 4: scramble then real -->
-  <text class="t" x="38" y="212" fill="#1a4a2e" font-family="'Courier New',Courier,monospace" font-size="12" opacity="0">
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.01;0.6;1" dur="0.65s" begin="3.7s" fill="freeze"/>
-    <tspan class="prompt">▶ </tspan><tspan class="lbl">OPS       </tspan><tspan fill="#1a6630">Crypt0Gu4rd·1nt3l0pS·Fr4udL3nS</tspan>
-  </text>
+  <!-- Separator -->
+  <text x="98" y="118" font-family="'Courier New',Courier,monospace" font-size="13" fill="#334155"> : </text>
 
-  <!-- Real line with clip reveal -->
-  <g clip-path="url(#c4)">
-    <text class="t" x="38" y="212" font-family="'Courier New',Courier,monospace" font-size="13.5">
-      <tspan fill="#f97316">▶ </tspan><tspan fill="#00d4ff">OPS       </tspan><tspan fill="#22c55e">  CryptoGuard · IntelOps · FraudLens · EE Zone</tspan>
-    </text>
-  </g>
+  <!-- Value -->
+  <text x="122" y="118" font-family="'Courier New',Courier,monospace" font-size="13" fill="#e2e8f0">Full-Stack Eng · AI Architect · Cybersec,</text>
 
-  <!-- Line 5: scramble then real -->
-  <text class="t" x="38" y="248" fill="#1a4a2e" font-family="'Courier New',Courier,monospace" font-size="12" opacity="0">
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.01;0.6;1" dur="0.65s" begin="4.6000000000000005s" fill="freeze"/>
-    <tspan class="prompt">▶ </tspan><tspan class="lbl">ALLIANCE  </tspan><tspan fill="#1a6630">PuN3_P0L1C3_CYB3RCR1M3_C3LL</tspan>
-  </text>
+  <!-- Line 3 -->
+  <text x="18" y="154" font-family="'Courier New',Courier,monospace" font-size="11" fill="#1e3a2f" opacity="0.6">03</text>
 
-  <!-- Real line with clip reveal -->
-  <g clip-path="url(#c5)">
-    <text class="t" x="38" y="248" font-family="'Courier New',Courier,monospace" font-size="13.5">
-      <tspan fill="#f97316">▶ </tspan><tspan fill="#00d4ff">ALLIANCE  </tspan><tspan fill="#f97316">  Pune Police Cybercrime Cell  🚔</tspan>
-    </text>
-  </g>
+  <!-- Prompt arrow -->
+  <text x="40" y="154" font-family="'Courier New',Courier,monospace" font-size="13.5" fill="#f97316" font-weight="bold">▶</text>
 
-  <!-- Line 6: scramble then real -->
-  <text class="t" x="38" y="284" fill="#1a4a2e" font-family="'Courier New',Courier,monospace" font-size="12" opacity="0">
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.01;0.6;1" dur="0.65s" begin="5.500000000000001s" fill="freeze"/>
-    <tspan class="prompt">▶ </tspan><tspan class="lbl">RECORD    </tspan><tspan fill="#1a6630">18+_PR0DUCT10N_4PP5_5H1PP3D</tspan>
-  </text>
+  <!-- Label with cyan glow animation -->
+  <text x="60" y="154" font-family="'Courier New',Courier,monospace" font-size="13" fill="#00d4ff" font-weight="bold"
+    style="animation:glow 2.6s ease-in-out infinite">BASE</text>
 
-  <!-- Real line with clip reveal -->
-  <g clip-path="url(#c6)">
-    <text class="t" x="38" y="284" font-family="'Courier New',Courier,monospace" font-size="13.5">
-      <tspan fill="#f97316">▶ </tspan><tspan fill="#00d4ff">RECORD    </tspan><tspan fill="#fbbf24">  18+ Production Apps Shipped in College</tspan>
-    </text>
-  </g>
+  <!-- Separator -->
+  <text x="98" y="154" font-family="'Courier New',Courier,monospace" font-size="13" fill="#334155"> : </text>
 
-  <!-- Line 7: scramble then real -->
-  <text class="t" x="38" y="320" fill="#1a4a2e" font-family="'Courier New',Courier,monospace" font-size="12" opacity="0">
-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.01;0.6;1" dur="0.65s" begin="6.4s" fill="freeze"/>
-    <tspan class="prompt">▶ </tspan><tspan class="lbl">STATUS    </tspan><tspan fill="#1a6630">L04D1NG_$Y5T3M_PR0F1L3...</tspan>
-  </text>
+  <!-- Value -->
+  <text x="122" y="154" font-family="'Courier New',Courier,monospace" font-size="13" fill="#e2e8f0">Karad, Maharashtra, India,</text>
 
-  <!-- Real line with clip reveal -->
-  <g clip-path="url(#c7)">
-    <text class="t" x="38" y="320" font-family="'Courier New',Courier,monospace" font-size="13.5">
-      <tspan fill="#f97316">▶ </tspan><tspan fill="#00d4ff">STATUS    </tspan><tspan fill="#00FF41">  ONLINE ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100%</tspan>
-    </text>
-  </g>
+  <!-- Line 4 -->
+  <text x="18" y="190" font-family="'Courier New',Courier,monospace" font-size="11" fill="#1e3a2f" opacity="0.6">04</text>
+
+  <!-- Prompt arrow -->
+  <text x="40" y="190" font-family="'Courier New',Courier,monospace" font-size="13.5" fill="#f97316" font-weight="bold">▶</text>
+
+  <!-- Label with cyan glow animation -->
+  <text x="60" y="190" font-family="'Courier New',Courier,monospace" font-size="13" fill="#00d4ff" font-weight="bold"
+    style="animation:glow 2.9s ease-in-out infinite">COLLEGE</text>
+
+  <!-- Separator -->
+  <text x="122" y="190" font-family="'Courier New',Courier,monospace" font-size="13" fill="#334155"> : </text>
+
+  <!-- Value -->
+  <text x="146" y="190" font-family="'Courier New',Courier,monospace" font-size="13" fill="#94a3b8">GCEK — Govt. College of Engineering,</text>
+
+  <!-- Line 5 -->
+  <text x="18" y="226" font-family="'Courier New',Courier,monospace" font-size="11" fill="#1e3a2f" opacity="0.6">05</text>
+
+  <!-- Prompt arrow -->
+  <text x="40" y="226" font-family="'Courier New',Courier,monospace" font-size="13.5" fill="#f97316" font-weight="bold">▶</text>
+
+  <!-- Label with cyan glow animation -->
+  <text x="60" y="226" font-family="'Courier New',Courier,monospace" font-size="13" fill="#00d4ff" font-weight="bold"
+    style="animation:glow 3.2s ease-in-out infinite">OPS</text>
+
+  <!-- Separator -->
+  <text x="90" y="226" font-family="'Courier New',Courier,monospace" font-size="13" fill="#334155"> : </text>
+
+  <!-- Value -->
+  <text x="114" y="226" font-family="'Courier New',Courier,monospace" font-size="13" fill="#22c55e">CryptoGuard · IntelOps · FraudLens · EE Zone,</text>
+
+  <!-- Line 6 -->
+  <text x="18" y="262" font-family="'Courier New',Courier,monospace" font-size="11" fill="#1e3a2f" opacity="0.6">06</text>
+
+  <!-- Prompt arrow -->
+  <text x="40" y="262" font-family="'Courier New',Courier,monospace" font-size="13.5" fill="#f97316" font-weight="bold">▶</text>
+
+  <!-- Label with cyan glow animation -->
+  <text x="60" y="262" font-family="'Courier New',Courier,monospace" font-size="13" fill="#00d4ff" font-weight="bold"
+    style="animation:glow 3.5s ease-in-out infinite">ALLIANCE</text>
+
+  <!-- Separator -->
+  <text x="130" y="262" font-family="'Courier New',Courier,monospace" font-size="13" fill="#334155"> : </text>
+
+  <!-- Value -->
+  <text x="154" y="262" font-family="'Courier New',Courier,monospace" font-size="13" fill="#f97316">Pune Police Cybercrime Cell,</text>
+
+  <!-- Line 7 -->
+  <text x="18" y="298" font-family="'Courier New',Courier,monospace" font-size="11" fill="#1e3a2f" opacity="0.6">07</text>
+
+  <!-- Prompt arrow -->
+  <text x="40" y="298" font-family="'Courier New',Courier,monospace" font-size="13.5" fill="#f97316" font-weight="bold">▶</text>
+
+  <!-- Label with cyan glow animation -->
+  <text x="60" y="298" font-family="'Courier New',Courier,monospace" font-size="13" fill="#00d4ff" font-weight="bold"
+    style="animation:glow 3.8s ease-in-out infinite">RECORD</text>
+
+  <!-- Separator -->
+  <text x="114" y="298" font-family="'Courier New',Courier,monospace" font-size="13" fill="#334155"> : </text>
+
+  <!-- Value -->
+  <text x="138" y="298" font-family="'Courier New',Courier,monospace" font-size="13" fill="#fbbf24">18+ Production Apps Shipped in College,</text>
+
+  <!-- Line 8 -->
+  <text x="18" y="334" font-family="'Courier New',Courier,monospace" font-size="11" fill="#1e3a2f" opacity="0.6">08</text>
+
+  <!-- Prompt arrow -->
+  <text x="40" y="334" font-family="'Courier New',Courier,monospace" font-size="13.5" fill="#f97316" font-weight="bold">▶</text>
+
+  <!-- Label with cyan glow animation -->
+  <text x="60" y="334" font-family="'Courier New',Courier,monospace" font-size="13" fill="#00d4ff" font-weight="bold"
+    style="animation:glow 4.1s ease-in-out infinite">STATUS</text>
+
+  <!-- Separator -->
+  <text x="114" y="334" font-family="'Courier New',Courier,monospace" font-size="13" fill="#334155"> : </text>
+
+  <!-- Value -->
+  <text x="138" y="334" font-family="'Courier New',Courier,monospace" font-size="13" fill="#00FF41">ONLINE  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  100%</text>
 
 <!-- Closing brace -->
-<text class="t glow" x="20" y="348" fill="#00FF41" font-family="'Courier New',Courier,monospace" font-size="14">&#125;</text>
+<text x="18" y="366" font-family="'Courier New',Courier,monospace" font-size="15" fill="#00FF41" opacity="0.9"
+  style="animation:glowG 2.5s ease-in-out infinite">&#125;</text>
 
-<!-- Cursor blink after all lines done -->
-<text class="cursor t" x="30" y="370" font-family="'Courier New',Courier,monospace" font-size="14" opacity="0">
-  <animate attributeName="opacity" from="0" to="1" dur="0.1s" begin="7.6000000000000005s" fill="freeze"/>
-  ▮
-</text>
+<!-- Blinking cursor -->
+<text x="30" y="390" font-family="'Courier New',Courier,monospace" font-size="15" fill="#00FF41"
+  style="animation:blink 1s step-end infinite">▮</text>
+
+<!-- Horizontal separator line at bottom -->
+<line x1="12" y1="374" x2="808" y2="374" stroke="#1e293b" stroke-width="1"/>
 
 <!-- Bottom status bar -->
-<rect x="0" y="368" width="820" height="22" fill="#0d1117"/>
-<line x1="0" y1="368" x2="820" y2="368" stroke="#00FF41" stroke-width="0.5" opacity="0.3"/>
-<text x="16" y="383" fill="#00FF41" font-family="'Courier New',Courier,monospace" font-size="10" class="glow">● SYSTEM ONLINE</text>
-<text x="410" y="383" text-anchor="middle" fill="#475569" font-family="'Courier New',Courier,monospace" font-size="10">ajinkyachalke008 · Maharashtra, India</text>
-<text x="804" y="383" text-anchor="end" fill="#22c55e" font-family="'Courier New',Courier,monospace" font-size="10">18+ APPS SHIPPED</text>
+<rect x="0" y="376" width="820" height="24" fill="#060912" rx="0"/>
+<rect x="0" y="376" width="820" height="24" fill="#060912"/>
+<rect x="0" y="376" width="820" height="24" fill="#060912" rx="12"/>
+<rect x="0" y="376" width="820" height="12" fill="#060912"/>
+
+<text x="18" y="392" font-family="'Courier New',Courier,monospace" font-size="10" fill="#00FF41"
+  style="animation:glowG 2s ease-in-out infinite">● SYSTEM ONLINE</text>
+
+<text x="410" y="392" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="10" fill="#475569">
+  ajinkyachalke008 · Maharashtra, India 🇮🇳
+</text>
+
+<text x="802" y="392" text-anchor="end" font-family="'Courier New',Courier,monospace" font-size="10" fill="#22c55e">
+  18+ APPS SHIPPED ✓
+</text>
+
+<!-- Corner decorations -->
+<text x="12" y="66" font-family="'Courier New',Courier,monospace" font-size="9" fill="#1e3a2f">// developer profile v2.0</text>
+<text x="808" y="66" text-anchor="end" font-family="'Courier New',Courier,monospace" font-size="9" fill="#1e3a2f">@ajinkyachalke008</text>
 
 </svg>
