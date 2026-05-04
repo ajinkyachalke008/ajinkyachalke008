@@ -53,73 +53,76 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2500&pause=800&color=00FF41&background=00000000&center=true&vCenter=true&width=750&height=55&lines=%3E+BOOTING+DEVELOPER+PROFILE...;%3E+LOADING+AJINKYA_CHALKE.exe+%E2%9C%93;%3E+AI+SYSTEMS%3A+ONLINE+%7C+THREAT+INTEL%3A+ARMED;%3E+FRAUD+DETECTION%3A+ACTIVE+%7C+STACK%3A+LOADED;%3E+STATUS%3A+BUILDING+IN+PRODUCTION+%F0%9F%9A%80" />
-
-<br/>
-
-<!-- ═══ STATUS BAR ═══ -->
-<img src="https://img.shields.io/badge/%E2%9A%A1%20STATUS-ONLINE%20%26%20BUILDING-00FF41?style=for-the-badge&labelColor=0a0e1a&color=00FF41" />
-&nbsp;
-<img src="https://img.shields.io/badge/%F0%9F%94%90%20CLEARANCE-AI%20%7C%20BLOCKCHAIN%20%7C%20CYBER-ff0055?style=for-the-badge&labelColor=0a0e1a&color=ff0055" />
-&nbsp;
-<img src="https://img.shields.io/badge/%F0%9F%8C%90%20BASE-KARAD%2C%20MAHARASHTRA%20%F0%9F%87%AE%F0%9F%87%B3-58a6ff?style=for-the-badge&labelColor=0a0e1a" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=900&size=16&duration=1800&pause=600&color=00FF41&center=true&vCenter=true&width=680&lines=%5BSYSTEM+BOOT%5D+Initializing+developer+profile...;%5BSCAN%5D+Loading+Ajinkya+Chalke...;%5BSTATUS%5D+Full-Stack+%2B+AI+Engineer+%E2%9C%85;%5BCLEARANCE%5D+Cybersecurity+%7C+Blockchain+%7C+AI%2FML+%F0%9F%94%90;%5BMISSION%5D+Building+real-world+AI+solutions+%F0%9F%9A%80;%5BACCESS+GRANTED%5D+Welcome+to+my+profile+%F0%9F%8C%90" />
 
 </div>
 
 <br/>
 
-<table width="100%">
+<div align="center">
+
+![STATUS](https://img.shields.io/badge/STATUS-ONLINE%20%E2%9C%85-00FF41?style=for-the-badge&labelColor=0a0e1a)
+![THREAT](https://img.shields.io/badge/THREAT%20INTEL-ACTIVE%20🔐-e11d48?style=for-the-badge&labelColor=0a0e1a)
+![AI](https://img.shields.io/badge/AI%20PIPELINES-RUNNING%20⚡-58a6ff?style=for-the-badge&labelColor=0a0e1a)
+![FRAUD](https://img.shields.io/badge/FRAUD%20DETECTION-ARMED%20🛡️-f97316?style=for-the-badge&labelColor=0a0e1a)
+
+</div>
+
+<br/>
+
+<table>
 <tr>
 <td width="50%" valign="top">
 
-### ⚡ `OPERATOR PROFILE`
+### 🪪 Identity Card
 
-<img src="https://img.shields.io/badge/NAME-Ajinkya%20Chalke-00FF41?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/ROLE-Full--Stack%20%26%20AI%20Engineer-58a6ff?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/BASE-Karad%2C%20Maharashtra%2C%20India-f59e0b?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/COLLEGE-GCEK%2C%20Karad-a855f7?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/ALLIANCE-Pune%20Police%20Cybercrime%20Cell%20%F0%9F%9A%94-ff0055?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/SHIPPED-18%2B%20Production%20Apps-22c55e?style=flat-square&labelColor=0d1117" />
+| Field | Value |
+|:--|:--|
+| 👤 **Name** | Ajinkya Chalke |
+| 🎓 **College** | GCEK — Karad |
+| 🌐 **Base** | Maharashtra, India 🇮🇳 |
+| 💼 **Role** | Full-Stack · AI · Cybersec |
+| 🎯 **Mission** | AI for real Indian problems |
+| 🚔 **Alliance** | Pune Police Cybercrime Cell |
+| 📦 **Shipped** | 18+ production apps |
 
 </td>
 <td width="50%" valign="top">
 
-### 🔐 `ACTIVE OPERATIONS`
+### ⚡ Active Operations
 
-<img src="https://img.shields.io/badge/%F0%9F%94%90%20CryptoGuard-Blockchain%20Fraud%20AI-e11d48?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/%F0%9F%9B%B0%EF%B8%8F%20IntelOps-Geopolitical%20Intelligence-0ea5e9?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/%F0%9F%95%B5%EF%B8%8F%20FraudLens-GNN%20%2B%20Pune%20Police-f97316?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/%F0%9F%8C%BE%20AgroPro-Gemini%20Vision%20AI-22c55e?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/%E2%9A%A1%20EE%20Zone-NVIDIA%20NIM%20%2B%20CAD-8b5cf6?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/%F0%9F%9A%A8%20NRC--OS-Emergency%20Command%20AI-f59e0b?style=flat-square&labelColor=0d1117" />
+![CryptoGuard](https://img.shields.io/badge/🔐%20CryptoGuard-ACTIVE-e11d48?style=for-the-badge&labelColor=0a0e1a)
+
+![IntelOps](https://img.shields.io/badge/🛰️%20IntelOps-ACTIVE-3b82f6?style=for-the-badge&labelColor=0a0e1a)
+
+![FraudLens](https://img.shields.io/badge/🕵️%20FraudLens-ACTIVE-a855f7?style=for-the-badge&labelColor=0a0e1a)
+
+![AgroPro](https://img.shields.io/badge/🌾%20AgroPro-ACTIVE-22c55e?style=for-the-badge&labelColor=0a0e1a)
+
+![EEZone](https://img.shields.io/badge/⚡%20EE%20Zone-ACTIVE-f59e0b?style=for-the-badge&labelColor=0a0e1a)
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-### 🧠 `TECH ARSENAL`
+### 🧠 Core Arsenal
 
-<img src="https://img.shields.io/badge/React%2019-Expert-61dafb?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/TypeScript-Expert-3178c6?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/Gemini%20API-Expert-8E75B2?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/FastAPI-Advanced-009688?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/PyTorch%20GNN-Advanced-ee4c2c?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Neo4j-Intermediate-008CC1?style=flat-square&labelColor=0d1117" />
-<br/><img src="https://img.shields.io/badge/Next.js-Advanced-ffffff?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Docker-Intermediate-2496ed?style=flat-square&labelColor=0d1117" />
+![React](https://img.shields.io/badge/React_19-61dafb?style=flat-square&logo=react&logoColor=black&labelColor=0a0e1a)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white&labelColor=0a0e1a)
+![Gemini](https://img.shields.io/badge/Gemini_API-8E75B2?style=flat-square&logo=google&logoColor=white&labelColor=0a0e1a)
+![Blockchain](https://img.shields.io/badge/Blockchain_AI-627EEA?style=flat-square&logo=ethereum&logoColor=white&labelColor=0a0e1a)
+![Cybersec](https://img.shields.io/badge/Cybersecurity-e11d48?style=flat-square&logo=hackthebox&logoColor=white&labelColor=0a0e1a)
 
 </td>
 <td width="50%" valign="top">
 
-### 📡 `UPLINK CHANNELS`
+### 📡 Upskilling
 
-<a href="https://portfolio-eta-ruby-7fs42ayh6b.vercel.app/"><img src="https://img.shields.io/badge/%F0%9F%8C%90%20PORTFOLIO-LIVE%20NOW-58a6ff?style=flat-square&labelColor=0d1117" /></a>
-<br/><a href="https://www.linkedin.com/in/ajinkya-chalke-711b953b5"><img src="https://img.shields.io/badge/%F0%9F%92%BC%20LINKEDIN-CONNECT-0a66c2?style=flat-square&labelColor=0d1117" /></a>
-<br/><a href="https://cryptoguard-flame.vercel.app"><img src="https://img.shields.io/badge/%F0%9F%94%90%20CRYPTOGUARD-LIVE%20DEMO-e11d48?style=flat-square&labelColor=0d1117" /></a>
-<br/><a href="https://eezone-08-e8dm.vercel.app/"><img src="https://img.shields.io/badge/%E2%9A%A1%20EE%20ZONE-LIVE%20DEMO-8b5cf6?style=flat-square&labelColor=0d1117" /></a>
-<br/><a href="mailto:ajinkyachalke008@gmail.com"><img src="https://img.shields.io/badge/%F0%9F%93%A7%20GMAIL-GET%20IN%20TOUCH-ea4335?style=flat-square&labelColor=0d1117" /></a>
+![LangChain](https://img.shields.io/badge/LangChain-1DB954?style=flat-square&labelColor=0a0e1a)
+![VectorDB](https://img.shields.io/badge/Vector_DBs-00C2A0?style=flat-square&labelColor=0a0e1a)
+![RAG](https://img.shields.io/badge/Advanced_RAG-f97316?style=flat-square&labelColor=0a0e1a)
+![GNN](https://img.shields.io/badge/GNN_Fraud_Detection-ee4c2c?style=flat-square&logo=pytorch&logoColor=white&labelColor=0a0e1a)
 
 </td>
 </tr>
@@ -127,17 +130,15 @@
 
 <div align="center">
 
+### 🔓 Open To
+
+![Collabs](https://img.shields.io/badge/Open%20To-Collaborations-22c55e?style=for-the-badge&labelColor=0a0e1a)
+![OpenSource](https://img.shields.io/badge/Open%20To-Open%20Source-58a6ff?style=for-the-badge&labelColor=0a0e1a)
+![GovAI](https://img.shields.io/badge/Open%20To-Gov--Sector%20AI%20Projects-f59e0b?style=for-the-badge&labelColor=0a0e1a)
+
 <br/>
 
-<img src="https://img.shields.io/badge/MISSION-Turning%20national--scale%20problems%20into%20AI--driven%20solutions-00FF41?style=for-the-badge&labelColor=0a0e1a" />
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/UPSKILLING-LangChain%20%7C%20Vector%20DBs%20%7C%20Advanced%20RAG%20%7C%20GNN-f59e0b?style=for-the-badge&labelColor=0a0e1a" />
-
-<br/><br/>
-
-> **`>> "First, solve the problem. Then, write the code." — John Johnson`**
+> 💬 *"First, solve the problem. Then, write the code."* — John Johnson
 
 </div>
 
