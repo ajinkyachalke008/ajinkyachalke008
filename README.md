@@ -37,11 +37,11 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-ajinkyachalke008-181717?style=flat-square&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008)
 &nbsp;·&nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0a0e1a)](https://linkedin.com/in/ajinkya-chalke)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0a0e1a)](https://www.linkedin.com/in/ajinkya-chalke-711b953b5)
 &nbsp;·&nbsp;
 [![Gmail](https://img.shields.io/badge/Gmail-Mail%20Me-ea4335?style=flat-square&logo=gmail&logoColor=white&labelColor=0a0e1a)](mailto:ajinkyachalke008@gmail.com)
 &nbsp;·&nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Site-58a6ff?style=flat-square&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008/Portfolio)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Site-58a6ff?style=flat-square&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://portfolio-eta-ruby-7fs42ayh6b.vercel.app/)
 &nbsp;·&nbsp;
 [![CryptoGuard](https://img.shields.io/badge/CryptoGuard-Live%20Demo-e11d48?style=flat-square&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://cryptoguard-flame.vercel.app)
 
@@ -51,22 +51,66 @@
 
 ## 👨‍💻 About Me
 
+<div align="center">
+
+```
+╔══════════════════════════════════════════════════════════════════╗
+║              >> SYSTEM IDENTIFICATION — AJINKYA CHALKE <<       ║
+║              >> INITIALIZING PROFILE SCAN...                    ║
+╚══════════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
 ```typescript
-const ajinkya: Developer = {
-  name        : "Ajinkya Chalke",
-  username    : "ajinkyachalke008",
-  location    : "Karad, Maharashtra, India",
-  college     : "Government College of Engineering, Karad",
-  role        : "Full-Stack Developer & AI Engineer",
-  focus       : ["React 19", "TypeScript", "Gemini API", "Blockchain AI", "Cybersecurity"],
-  currentWork : ["CryptoGuard", "IntelOps", "FraudLens", "AgroPro"],
-  openTo      : ["Collaborations", "Open Source", "Gov-Sector AI Projects"],
-  superpower  : "Turning real-world Indian problems into AI-driven solutions",
-  learning    : ["LangChain", "Vector DBs", "Advanced RAG", "GNN Fraud Detection"],
-  funFact     : "Shipped 18+ projects while still in college",
-  partner     : "Collaborating with Pune Police Cybercrime Cell",
-  quote       : "First, solve the problem. Then, write the code.",
+/**
+ * ┌─────────────────────────────────────────────────────────────────┐
+ * │  ██████╗ ███████╗██╗   ██╗███████╗██╗      ██████╗ ██████╗    │
+ * │  ██╔══██╗██╔════╝██║   ██║██╔════╝██║     ██╔═══██╗██╔══██╗   │
+ * │  ██║  ██║█████╗  ██║   ██║█████╗  ██║     ██║   ██║██████╔╝   │
+ * │  ██║  ██║██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║     ██║   ██║██╔═══╝    │
+ * │  ██████╔╝███████╗ ╚████╔╝ ███████╗███████╗╚██████╔╝██║        │
+ * │  ╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝╚══════╝ ╚═════╝ ╚═╝        │
+ * └─────────────────────────────────────────────────────────────────┘
+ * ⚡ STATUS     : [ ONLINE — BUILDING IN PRODUCTION ]
+ * 🌐 LOCATION  : [ KARAD, MAHARASHTRA, INDIA ]
+ * 🔐 CLEARANCE : [ CYBERSECURITY · BLOCKCHAIN · AI/ML ]
+ */
+
+interface Developer {
+  identity    : string;
+  base        : string;
+  college     : string;
+  mission     : string;
+  arsenal     : string[];
+  activeOps   : string[];
+  clearance   : string[];
+  superpower  : string;
+  upskilling  : string[];
+  intel       : string;
+  govAlliance : string;
+  directive   : string;
+}
+
+const AJINKYA_CHALKE: Developer = {
+  identity    : "Full-Stack Engineer · AI Architect · Cybersecurity Researcher",
+  base        : "Karad, Maharashtra, India 🇮🇳",
+  college     : "Government College of Engineering, Karad (GCEK)",
+  mission     : "Building AI-powered solutions for real-world Indian problems",
+  arsenal     : ["React 19", "TypeScript", "Gemini API", "Blockchain AI", "Cybersecurity"],
+  activeOps   : ["CryptoGuard 🔐", "IntelOps 🛰️", "FraudLens 🕵️", "AgroPro 🌾", "EE Zone ⚡"],
+  clearance   : ["Collaborations", "Open Source", "Gov-Sector AI Projects"],
+  superpower  : "Turning complex national-scale problems into elegant AI solutions",
+  upskilling  : ["LangChain", "Vector DBs", "Advanced RAG", "GNN Fraud Detection"],
+  intel       : "Shipped 18+ production apps while still in engineering college",
+  govAlliance : "Active collaboration with Pune Police Cybercrime Cell 🚔",
+  directive   : "First, solve the problem. Then, write the code. — John Johnson",
 };
+
+// ─── BOOT SEQUENCE COMPLETE ────────────────────────────────────────
+// >> All systems nominal. Threat intelligence: ACTIVE.
+// >> AI pipelines: RUNNING. Fraud detection: ARMED.
+// ───────────────────────────────────────────────────────────────────
 ```
 
 ---
@@ -186,6 +230,7 @@ const ajinkya: Developer = {
 | **Graph Neural Networks** | FraudLens | GNN-based fraud pattern detection for Pune Police Cybercrime Cell |
 | **OSINT Intelligence** | IntelOps | Multi-source geopolitical intelligence with SIGINT/GEOINT/OSINT/SOCINT |
 | **Spatial Risk Intelligence** | NRC-OS | Incident discovery, geo-analysis, AI-driven disaster coordination |
+| **AI CAD Assistant — NVIDIA NIM** | [EE Zone](https://ee-zone.vercel.app) | LLaMA 3.3-70B via NVIDIA NIM API · iframe-embedded CADAM · AI-powered electrical CAD |
 | **Structured AI Output** | All Projects | JSON schema validation, error boundaries, SDK-safe integrations |
 | **Prompt Engineering** | All Projects | Few-shot, chain-of-thought, system-prompt optimization |
 
@@ -215,11 +260,16 @@ const ajinkya: Developer = {
 | 8-week execution plan · FastAPI · PyTorch GNNs | Drag-drop UI · Laser scan animation · Scan history |
 | [![View Repo](https://img.shields.io/badge/View_Repo-3b82f6?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008) | [![View Repo](https://img.shields.io/badge/View_Repo-22c55e?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008) |
 
-| NRC-OS | All Public Repos |
+| NRC-OS | EE Zone |
 |:---|:---|
-| **National Emergency Command System** | **18+ Public Repositories** |
-| AI-driven real-time incident discovery | React · TypeScript · AI Integrations |
-| [![View Repo](https://img.shields.io/badge/View_Repo-f97316?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008/nrc-os-08) | [![Browse All](https://img.shields.io/badge/Browse_All_Repos-f59e0b?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008?tab=repositories) |
+| **National Emergency Command System** | **AI-Powered Electrical CAD Platform** |
+| AI-driven real-time incident discovery | NVIDIA NIM · LLaMA 3.3-70B · CADAM |
+| [![View Repo](https://img.shields.io/badge/View_Repo-f97316?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008/nrc-os-08) | [![Live Demo](https://img.shields.io/badge/Live_Demo-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://ee-zone.vercel.app) [![View Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008) |
+
+| All Public Repos | |
+|:---|:---|
+| **18+ Production Repositories** | React · TypeScript · AI · Cybersecurity |
+| [![Browse All](https://img.shields.io/badge/Browse_All_Repos-f59e0b?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008?tab=repositories) | |
 
 </div>
 
@@ -413,11 +463,13 @@ Learning    ->  Advanced RAG, vector databases, LangChain & LangGraph
 
 [![GitHub](https://img.shields.io/badge/GitHub-ajinkyachalke008-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-View_My_Work-58a6ff?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008/Portfolio)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View_My_Work-58a6ff?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://portfolio-eta-ruby-7fs42ayh6b.vercel.app/)
 &nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0e1a)](https://linkedin.com/in/ajinkya-chalke)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0e1a)](https://www.linkedin.com/in/ajinkya-chalke-711b953b5)
 &nbsp;
 [![Email](https://img.shields.io/badge/Gmail-Get_In_Touch-ea4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0e1a)](mailto:ajinkyachalke008@gmail.com)
+&nbsp;
+[![EE Zone](https://img.shields.io/badge/EE_Zone-Live_Demo-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://ee-zone.vercel.app)
 &nbsp;
 [![CryptoGuard](https://img.shields.io/badge/CryptoGuard-Live_Demo-e11d48?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://cryptoguard-flame.vercel.app)
 
