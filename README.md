@@ -55,82 +55,18 @@
 
 <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=900&size=16&duration=1800&pause=600&color=00FF41&center=true&vCenter=true&width=680&lines=%5BSYSTEM+BOOT%5D+Initializing+developer+profile...;%5BSCAN%5D+Loading+Ajinkya+Chalke...;%5BSTATUS%5D+Full-Stack+%2B+AI+Engineer+%E2%9C%85;%5BCLEARANCE%5D+Cybersecurity+%7C+Blockchain+%7C+AI%2FML+%F0%9F%94%90;%5BMISSION%5D+Building+real-world+AI+solutions+%F0%9F%9A%80;%5BACCESS+GRANTED%5D+Welcome+to+my+profile+%F0%9F%8C%90" />
 
-</div>
+<br/><br/>
 
-<br/>
+<img src="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/main/about_me.svg" width="100%" alt="About Me Terminal"/>
 
-<div align="center">
+<br/><br/>
 
-![STATUS](https://img.shields.io/badge/STATUS-ONLINE%20%E2%9C%85-00FF41?style=for-the-badge&labelColor=0a0e1a)
+![STATUS](https://img.shields.io/badge/STATUS-ONLINE%20✅-00FF41?style=for-the-badge&labelColor=0a0e1a)
 ![THREAT](https://img.shields.io/badge/THREAT%20INTEL-ACTIVE%20🔐-e11d48?style=for-the-badge&labelColor=0a0e1a)
 ![AI](https://img.shields.io/badge/AI%20PIPELINES-RUNNING%20⚡-58a6ff?style=for-the-badge&labelColor=0a0e1a)
 ![FRAUD](https://img.shields.io/badge/FRAUD%20DETECTION-ARMED%20🛡️-f97316?style=for-the-badge&labelColor=0a0e1a)
 
-</div>
-
 <br/>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🪪 Identity Card
-
-| Field | Value |
-|:--|:--|
-| 👤 **Name** | Ajinkya Chalke |
-| 🎓 **College** | GCEK — Karad |
-| 🌐 **Base** | Maharashtra, India 🇮🇳 |
-| 💼 **Role** | Full-Stack · AI · Cybersec |
-| 🎯 **Mission** | AI for real Indian problems |
-| 🚔 **Alliance** | Pune Police Cybercrime Cell |
-| 📦 **Shipped** | 18+ production apps |
-
-</td>
-<td width="50%" valign="top">
-
-### ⚡ Active Operations
-
-![CryptoGuard](https://img.shields.io/badge/🔐%20CryptoGuard-ACTIVE-e11d48?style=for-the-badge&labelColor=0a0e1a)
-
-![IntelOps](https://img.shields.io/badge/🛰️%20IntelOps-ACTIVE-3b82f6?style=for-the-badge&labelColor=0a0e1a)
-
-![FraudLens](https://img.shields.io/badge/🕵️%20FraudLens-ACTIVE-a855f7?style=for-the-badge&labelColor=0a0e1a)
-
-![AgroPro](https://img.shields.io/badge/🌾%20AgroPro-ACTIVE-22c55e?style=for-the-badge&labelColor=0a0e1a)
-
-![EEZone](https://img.shields.io/badge/⚡%20EE%20Zone-ACTIVE-f59e0b?style=for-the-badge&labelColor=0a0e1a)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🧠 Core Arsenal
-
-![React](https://img.shields.io/badge/React_19-61dafb?style=flat-square&logo=react&logoColor=black&labelColor=0a0e1a)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white&labelColor=0a0e1a)
-![Gemini](https://img.shields.io/badge/Gemini_API-8E75B2?style=flat-square&logo=google&logoColor=white&labelColor=0a0e1a)
-![Blockchain](https://img.shields.io/badge/Blockchain_AI-627EEA?style=flat-square&logo=ethereum&logoColor=white&labelColor=0a0e1a)
-![Cybersec](https://img.shields.io/badge/Cybersecurity-e11d48?style=flat-square&logo=hackthebox&logoColor=white&labelColor=0a0e1a)
-
-</td>
-<td width="50%" valign="top">
-
-### 📡 Upskilling
-
-![LangChain](https://img.shields.io/badge/LangChain-1DB954?style=flat-square&labelColor=0a0e1a)
-![VectorDB](https://img.shields.io/badge/Vector_DBs-00C2A0?style=flat-square&labelColor=0a0e1a)
-![RAG](https://img.shields.io/badge/Advanced_RAG-f97316?style=flat-square&labelColor=0a0e1a)
-![GNN](https://img.shields.io/badge/GNN_Fraud_Detection-ee4c2c?style=flat-square&logo=pytorch&logoColor=white&labelColor=0a0e1a)
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-### 🔓 Open To
 
 ![Collabs](https://img.shields.io/badge/Open%20To-Collaborations-22c55e?style=for-the-badge&labelColor=0a0e1a)
 ![OpenSource](https://img.shields.io/badge/Open%20To-Open%20Source-58a6ff?style=for-the-badge&labelColor=0a0e1a)
