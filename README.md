@@ -230,7 +230,7 @@ const AJINKYA_CHALKE: Developer = {
 | **Graph Neural Networks** | FraudLens | GNN-based fraud pattern detection for Pune Police Cybercrime Cell |
 | **OSINT Intelligence** | IntelOps | Multi-source geopolitical intelligence with SIGINT/GEOINT/OSINT/SOCINT |
 | **Spatial Risk Intelligence** | NRC-OS | Incident discovery, geo-analysis, AI-driven disaster coordination |
-| **AI CAD Assistant — NVIDIA NIM** | [EE Zone](https://ee-zone.vercel.app) | LLaMA 3.3-70B via NVIDIA NIM API · iframe-embedded CADAM · AI-powered electrical CAD |
+| **AI CAD Assistant — NVIDIA NIM** | [EE Zone](https://eezone-08-e8dm.vercel.app/) | LLaMA 3.3-70B via NVIDIA NIM API · iframe-embedded CADAM · AI-powered electrical CAD |
 | **Structured AI Output** | All Projects | JSON schema validation, error boundaries, SDK-safe integrations |
 | **Prompt Engineering** | All Projects | Few-shot, chain-of-thought, system-prompt optimization |
 
@@ -264,7 +264,7 @@ const AJINKYA_CHALKE: Developer = {
 |:---|:---|
 | **National Emergency Command System** | **AI-Powered Electrical CAD Platform** |
 | AI-driven real-time incident discovery | NVIDIA NIM · LLaMA 3.3-70B · CADAM |
-| [![View Repo](https://img.shields.io/badge/View_Repo-f97316?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008/nrc-os-08) | [![Live Demo](https://img.shields.io/badge/Live_Demo-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://ee-zone.vercel.app) [![View Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008) |
+| [![View Repo](https://img.shields.io/badge/View_Repo-f97316?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008/nrc-os-08) | [![Live Demo](https://img.shields.io/badge/Live_Demo-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://eezone-08-e8dm.vercel.app/) [![View Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0e1a)](https://github.com/ajinkyachalke008) |
 
 | All Public Repos | |
 |:---|:---|
@@ -469,7 +469,7 @@ Learning    ->  Advanced RAG, vector databases, LangChain & LangGraph
 &nbsp;
 [![Email](https://img.shields.io/badge/Gmail-Get_In_Touch-ea4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0e1a)](mailto:ajinkyachalke008@gmail.com)
 &nbsp;
-[![EE Zone](https://img.shields.io/badge/EE_Zone-Live_Demo-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://ee-zone.vercel.app)
+[![EE Zone](https://img.shields.io/badge/EE_Zone-Live_Demo-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://eezone-08-e8dm.vercel.app/)
 &nbsp;
 [![CryptoGuard](https://img.shields.io/badge/CryptoGuard-Live_Demo-e11d48?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0e1a)](https://cryptoguard-flame.vercel.app)
 
