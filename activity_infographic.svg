@@ -1,0 +1,445 @@
+<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+@keyframes fadeUp    { from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)} }
+@keyframes glowG     { 0%,100%{filter:drop-shadow(0 0 5px #22c55e) drop-shadow(0 0 12px #22c55e)} 50%{filter:drop-shadow(0 0 14px #22c55e) drop-shadow(0 0 30px #22c55e)} }
+@keyframes glowB     { 0%,100%{filter:drop-shadow(0 0 5px #58a6ff) drop-shadow(0 0 12px #58a6ff)} 50%{filter:drop-shadow(0 0 14px #58a6ff) drop-shadow(0 0 30px #58a6ff)} }
+@keyframes barRise   { from{height:0;transform:translateY(0)}to{} }
+@keyframes waveAnim  { 0%{transform:translateX(0)}100%{transform:translateX(-50%)} }
+@keyframes borderFlow{ 0%{stroke-dashoffset:3000}100%{stroke-dashoffset:0} }
+@keyframes rgbB      { 0%{stroke:#22c55e}33%{stroke:#00FF41}66%{stroke:#58a6ff}100%{stroke:#22c55e} }
+@keyframes scanMove  { 0%{transform:translateY(54px)}100%{transform:translateY(420px)} }
+@keyframes dotBlink  { 0%,49%{fill:#22c55e}50%,100%{fill:#145214} }
+@keyframes pulse     { 0%,100%{opacity:.5}50%{opacity:1} }
+</style>
+<filter id="gG2"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gB2"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="bg2" x1="0" y1="0" x2=".1" y2="1">
+  <stop offset="0%" stop-color="#0a0e1a"/><stop offset="100%" stop-color="#05080f"/>
+</linearGradient>
+<linearGradient id="waveG" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#22c55e" stop-opacity=".5"/>
+  <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="waveB" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#58a6ff" stop-opacity=".4"/>
+  <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clipAct"><rect width="900" height="420" rx="16"/></clipPath>
+</defs>
+
+<rect width="900" height="420" fill="url(#bg2)" rx="16"/>
+
+<!-- Grid -->
+<line x1="0" y1="0" x2="900" y2="0" stroke="#ffffff" stroke-width=".3" opacity=".025"/><line x1="0" y1="40" x2="900" y2="40" stroke="#ffffff" stroke-width=".3" opacity=".025"/><line x1="0" y1="80" x2="900" y2="80" stroke="#ffffff" stroke-width=".3" opacity=".025"/><line x1="0" y1="120" x2="900" y2="120" stroke="#ffffff" stroke-width=".3" opacity=".025"/><line x1="0" y1="160" x2="900" y2="160" stroke="#ffffff" stroke-width=".3" opacity=".025"/><line x1="0" y1="200" x2="900" y2="200" stroke="#ffffff" stroke-width=".3" opacity=".025"/><line x1="0" y1="240" x2="900" y2="240" stroke="#ffffff" stroke-width=".3" opacity=".025"/><line x1="0" y1="280" x2="900" y2="280" stroke="#ffffff" stroke-width=".3" opacity=".025"/><line x1="0" y1="320" x2="900" y2="320" stroke="#ffffff" stroke-width=".3" opacity=".025"/><line x1="0" y1="360" x2="900" y2="360" stroke="#ffffff" stroke-width=".3" opacity=".025"/><line x1="0" y1="400" x2="900" y2="400" stroke="#ffffff" stroke-width=".3" opacity=".025"/>
+
+<!-- Border -->
+<rect x="1.5" y="1.5" width="897" height="417" fill="none" rx="15"
+  stroke="#22c55e" stroke-width="2" stroke-dasharray="3000"
+  style="animation:borderFlow 4s linear forwards, rgbB 5s linear 4s infinite"/>
+
+<!-- Scan bar -->
+<rect width="900" height="2.5" fill="#22c55e" opacity=".05" clip-path="url(#clipAct)"
+  style="animation:scanMove 8s linear infinite"/>
+
+<!-- Title bar -->
+<rect x="0" y="0" width="900" height="56" fill="#060c10" rx="16"/>
+<rect x="0" y="44" width="900" height="12" fill="#060c10"/>
+<line x1="0" y1="56" x2="900" y2="56" stroke="#22c55e" stroke-width=".8" opacity=".4"
+  style="animation:glowG 3s ease-in-out infinite"/>
+
+<circle cx="24" cy="28" r="8" fill="#ff5f56"/>
+<circle cx="46" cy="28" r="8" fill="#ffbd2e"/>
+<circle cx="68" cy="28" r="8" fill="#27c93f"/>
+<text x="450" y="33" text-anchor="middle" fill="#374151" font-family="'Courier New',monospace" font-size="13">
+  ajinkya@devbox:~/contribution-activity.log
+</text>
+<circle cx="820" cy="28" r="6" fill="#22c55e" style="animation:dotBlink 1.2s step-end infinite"/>
+<text x="830" y="33" font-family="'Courier New',monospace" font-size="11" fill="#22c55e">LIVE</text>
+
+<!-- Section title -->
+<text x="450" y="82" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif"
+  font-size="18" font-weight="700" letter-spacing="5"
+  style="animation:glowG 3s ease-in-out infinite" filter="url(#gG2)">
+  ◈  CONTRIBUTION  ACTIVITY  ◈
+</text>
+<line x1="60" y1="90" x2="840" y2="90" stroke="#1e293b" stroke-width="1"
+  stroke-dasharray="400">
+  <animate attributeName="stroke-dashoffset" from="400" to="0" dur="1.5s" fill="freeze"/>
+</line>
+
+<!-- ══ MONTHLY BAR CHART ════════════════════════════════ -->
+<text x="60" y="232" font-family="Arial,sans-serif" font-size="13"
+  fill="#94a3b8" font-weight="600" letter-spacing="3"
+  style="animation:fadeUp .4s ease .3s both">MONTHLY COMMITS — 2025/2026</text>
+<line x1="60" y1="242" x2="852"
+  y2="242" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Bar Jan -->
+  <!-- Track -->
+  <rect x="60" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="60" y="380" width="52" height="0" rx="4" fill="#22c55e" opacity=".85">
+    <animate attributeName="y" from="380" to="335" dur=".8s" begin="0.50s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="45" dur=".8s" begin="0.50s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="60" y="335" width="52" height="3" rx="2" fill="#22c55e" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="1.30s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="335" dur=".8s" begin="0.50s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="86" y="327" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#22c55e" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.20s" fill="freeze"/>
+    37
+  </text>
+  <!-- Month label -->
+  <text x="86" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 0.50s both">Jan</text>
+
+  <!-- Bar Feb -->
+  <!-- Track -->
+  <rect x="126" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="126" y="380" width="52" height="0" rx="4" fill="#22c55e" opacity=".85">
+    <animate attributeName="y" from="380" to="318" dur=".8s" begin="0.57s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="62" dur=".8s" begin="0.57s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="126" y="318" width="52" height="3" rx="2" fill="#22c55e" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="1.37s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="318" dur=".8s" begin="0.57s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="152" y="310" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#22c55e" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.27s" fill="freeze"/>
+    51
+  </text>
+  <!-- Month label -->
+  <text x="152" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 0.57s both">Feb</text>
+
+  <!-- Bar Mar -->
+  <!-- Track -->
+  <rect x="192" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="192" y="380" width="52" height="0" rx="4" fill="#22c55e" opacity=".85">
+    <animate attributeName="y" from="380" to="302" dur=".8s" begin="0.64s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="78" dur=".8s" begin="0.64s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="192" y="302" width="52" height="3" rx="2" fill="#22c55e" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="1.44s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="302" dur=".8s" begin="0.64s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="218" y="294" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#22c55e" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.34s" fill="freeze"/>
+    65
+  </text>
+  <!-- Month label -->
+  <text x="218" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 0.64s both">Mar</text>
+
+  <!-- Bar Apr -->
+  <!-- Track -->
+  <rect x="258" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="258" y="380" width="52" height="0" rx="4" fill="#58a6ff" opacity=".85">
+    <animate attributeName="y" from="380" to="325" dur=".8s" begin="0.71s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="55" dur=".8s" begin="0.71s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="258" y="325" width="52" height="3" rx="2" fill="#58a6ff" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="1.51s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="325" dur=".8s" begin="0.71s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="284" y="317" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#58a6ff" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.41s" fill="freeze"/>
+    45
+  </text>
+  <!-- Month label -->
+  <text x="284" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 0.71s both">Apr</text>
+
+  <!-- Bar May -->
+  <!-- Track -->
+  <rect x="324" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="324" y="380" width="52" height="0" rx="4" fill="#22c55e" opacity=".85">
+    <animate attributeName="y" from="380" to="290" dur=".8s" begin="0.78s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="90" dur=".8s" begin="0.78s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="324" y="290" width="52" height="3" rx="2" fill="#22c55e" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="1.58s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="290" dur=".8s" begin="0.78s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="350" y="282" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#22c55e" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.48s" fill="freeze"/>
+    75
+  </text>
+  <!-- Month label -->
+  <text x="350" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 0.78s both">May</text>
+
+  <!-- Bar Jun -->
+  <!-- Track -->
+  <rect x="390" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="390" y="380" width="52" height="0" rx="4" fill="#22c55e" opacity=".85">
+    <animate attributeName="y" from="380" to="270" dur=".8s" begin="0.85s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="110" dur=".8s" begin="0.85s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="390" y="270" width="52" height="3" rx="2" fill="#22c55e" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="1.65s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="270" dur=".8s" begin="0.85s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="416" y="262" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#22c55e" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.55s" fill="freeze"/>
+    91
+  </text>
+  <!-- Month label -->
+  <text x="416" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 0.85s both">Jun</text>
+
+  <!-- Bar Jul -->
+  <!-- Track -->
+  <rect x="456" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="456" y="380" width="52" height="0" rx="4" fill="#22c55e" opacity=".85">
+    <animate attributeName="y" from="380" to="292" dur=".8s" begin="0.92s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="88" dur=".8s" begin="0.92s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="456" y="292" width="52" height="3" rx="2" fill="#22c55e" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="1.72s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="292" dur=".8s" begin="0.92s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="482" y="284" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#22c55e" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.62s" fill="freeze"/>
+    73
+  </text>
+  <!-- Month label -->
+  <text x="482" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 0.92s both">Jul</text>
+
+  <!-- Bar Aug -->
+  <!-- Track -->
+  <rect x="522" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="522" y="380" width="52" height="0" rx="4" fill="#58a6ff" opacity=".85">
+    <animate attributeName="y" from="380" to="308" dur=".8s" begin="0.99s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="72" dur=".8s" begin="0.99s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="522" y="308" width="52" height="3" rx="2" fill="#58a6ff" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="1.79s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="308" dur=".8s" begin="0.99s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="548" y="300" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#58a6ff" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.69s" fill="freeze"/>
+    60
+  </text>
+  <!-- Month label -->
+  <text x="548" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 0.99s both">Aug</text>
+
+  <!-- Bar Sep -->
+  <!-- Track -->
+  <rect x="588" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="588" y="380" width="52" height="0" rx="4" fill="#22c55e" opacity=".85">
+    <animate attributeName="y" from="380" to="285" dur=".8s" begin="1.06s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="95" dur=".8s" begin="1.06s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="588" y="285" width="52" height="3" rx="2" fill="#22c55e" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="1.86s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="285" dur=".8s" begin="1.06s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="614" y="277" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#22c55e" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.76s" fill="freeze"/>
+    79
+  </text>
+  <!-- Month label -->
+  <text x="614" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 1.06s both">Sep</text>
+
+  <!-- Bar Oct -->
+  <!-- Track -->
+  <rect x="654" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="654" y="380" width="52" height="0" rx="4" fill="#FFD700" opacity=".85">
+    <animate attributeName="y" from="380" to="262" dur=".8s" begin="1.13s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="118" dur=".8s" begin="1.13s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="654" y="262" width="52" height="3" rx="2" fill="#FFD700" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="1.93s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="262" dur=".8s" begin="1.13s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="680" y="254" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#FFD700" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.83s" fill="freeze"/>
+    98
+  </text>
+  <!-- Month label -->
+  <text x="680" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 1.13s both">Oct</text>
+
+  <!-- Bar Nov -->
+  <!-- Track -->
+  <rect x="720" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="720" y="380" width="52" height="0" rx="4" fill="#22c55e" opacity=".85">
+    <animate attributeName="y" from="380" to="278" dur=".8s" begin="1.20s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="102" dur=".8s" begin="1.20s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="720" y="278" width="52" height="3" rx="2" fill="#22c55e" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="2.00s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="278" dur=".8s" begin="1.20s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="746" y="270" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#22c55e" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.90s" fill="freeze"/>
+    85
+  </text>
+  <!-- Month label -->
+  <text x="746" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 1.20s both">Nov</text>
+
+  <!-- Bar Dec -->
+  <!-- Track -->
+  <rect x="786" y="260" width="52" height="120" rx="4"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".5"/>
+  <!-- Fill animated -->
+  <rect x="786" y="380" width="52" height="0" rx="4" fill="#22c55e" opacity=".85">
+    <animate attributeName="y" from="380" to="295" dur=".8s" begin="1.27s" fill="freeze"/>
+    <animate attributeName="height" from="0" to="85" dur=".8s" begin="1.27s" fill="freeze"/>
+  </rect>
+  <!-- Top glow cap -->
+  <rect x="786" y="295" width="52" height="3" rx="2" fill="#22c55e" filter="url(#gG2)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="2.07s" fill="freeze"/>
+    <animate attributeName="y" from="380" to="295" dur=".8s" begin="1.27s" fill="freeze"/>
+  </rect>
+  <!-- Value -->
+  <text x="812" y="287" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#22c55e" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur=".2s" begin="1.97s" fill="freeze"/>
+    70
+  </text>
+  <!-- Month label -->
+  <text x="812" y="398" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11" fill="#475569"
+    style="animation:fadeUp .3s ease 1.27s both">Dec</text>
+
+<!-- ══ COMMIT PULSE WAVE ════════════════════════════════ -->
+<text x="60" y="110" font-family="Arial,sans-serif" font-size="13"
+  fill="#94a3b8" font-weight="600" letter-spacing="3"
+  style="animation:fadeUp .4s ease .2s both">COMMIT FREQUENCY PULSE</text>
+
+<polyline points="60,138 130,129 200,121 270,133 340,115 410,105 480,116 550,124 620,113 690,101 760,109 830,118 900,138 970,129 1040,121 1110,133 1180,115 1250,105 1320,116 1390,124 1460,113 1530,101 1600,109 1670,118 1740,138 1810,129 1880,121 1950,133" fill="none" stroke="#22c55e" stroke-width="2.5"
+  stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1200" stroke-dashoffset="1200"
+  filter="url(#gG2)" style="animation:glowG 3s ease-in-out 1.5s infinite">
+  <animate attributeName="stroke-dashoffset" from="1200" to="0" dur="1.8s" begin=".3s" fill="freeze"/>
+</polyline>
+
+<!-- Area fill under wave -->
+<polygon points="60,138 130,129 200,121 270,133 340,115 410,105 480,116 550,124 620,113 690,101 760,109 830,118 900,138 970,129 1040,121 1110,133 1180,115 1250,105 1320,116 1390,124 1460,113 1530,101 1600,109 1670,118 1740,138 1810,129 1880,121 1950,133 1950,160 60,160" fill="url(#waveG)" opacity=".3"
+  style="animation:fadeUp .5s ease 2s both"/>
+
+<!-- Dots on wave peaks -->
+<circle cx="60" cy="138" r="5" fill="#22c55e" filter="url(#gG2)"
+  style="animation:pulse 2s ease-in-out 0.30s infinite" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="2.10s" fill="freeze"/>
+</circle>
+<circle cx="270" cy="133" r="5" fill="#22c55e" filter="url(#gG2)"
+  style="animation:pulse 2s ease-in-out 0.51s infinite" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="2.31s" fill="freeze"/>
+</circle>
+<circle cx="480" cy="116" r="5" fill="#22c55e" filter="url(#gG2)"
+  style="animation:pulse 2s ease-in-out 0.72s infinite" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="2.52s" fill="freeze"/>
+</circle>
+<circle cx="690" cy="101" r="5" fill="#22c55e" filter="url(#gG2)"
+  style="animation:pulse 2s ease-in-out 0.93s infinite" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="2.73s" fill="freeze"/>
+</circle>
+<circle cx="900" cy="138" r="5" fill="#22c55e" filter="url(#gG2)"
+  style="animation:pulse 2s ease-in-out 1.14s infinite" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="2.94s" fill="freeze"/>
+</circle>
+<circle cx="1110" cy="133" r="5" fill="#22c55e" filter="url(#gG2)"
+  style="animation:pulse 2s ease-in-out 1.35s infinite" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="3.15s" fill="freeze"/>
+</circle>
+<circle cx="1320" cy="116" r="5" fill="#22c55e" filter="url(#gG2)"
+  style="animation:pulse 2s ease-in-out 1.56s infinite" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="3.36s" fill="freeze"/>
+</circle>
+<circle cx="1530" cy="101" r="5" fill="#22c55e" filter="url(#gG2)"
+  style="animation:pulse 2s ease-in-out 1.77s infinite" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="3.57s" fill="freeze"/>
+</circle>
+<circle cx="1740" cy="138" r="5" fill="#22c55e" filter="url(#gG2)"
+  style="animation:pulse 2s ease-in-out 1.98s infinite" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="3.78s" fill="freeze"/>
+</circle>
+<circle cx="1950" cy="133" r="5" fill="#22c55e" filter="url(#gG2)"
+  style="animation:pulse 2s ease-in-out 2.19s infinite" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur=".1s" begin="3.99s" fill="freeze"/>
+</circle>
+
+<!-- Bottom bar -->
+<line x1="16" y1="392" x2="884" y2="392" stroke="#1e293b" stroke-width=".8"/>
+<circle cx="24" cy="406" r="5" fill="#22c55e" style="animation:dotBlink 1.2s step-end infinite"/>
+<text x="36" y="411" font-family="'Courier New',monospace" font-size="11" fill="#22c55e">TRACKING</text>
+<text x="450" y="411" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#334155">
+  github.com/ajinkyachalke008
+</text>
+<text x="880" y="411" text-anchor="end" font-family="'Courier New',monospace" font-size="11" fill="#22c55e">
+  CONTRIBUTIONS: ACTIVE ◈
+</text>
+</svg>

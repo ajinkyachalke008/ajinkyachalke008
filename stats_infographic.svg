@@ -1,0 +1,438 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+@keyframes blink     { 0%,49%{opacity:1}50%,100%{opacity:0} }
+@keyframes fadeUp    { from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)} }
+@keyframes drawLine  { from{stroke-dashoffset:400}to{stroke-dashoffset:0} }
+@keyframes fillBar   { from{width:0}to{width:var(--w)} }
+@keyframes countUp   { from{opacity:0}to{opacity:1} }
+@keyframes glowBlue  { 0%,100%{filter:drop-shadow(0 0 5px #58a6ff) drop-shadow(0 0 12px #58a6ff)} 50%{filter:drop-shadow(0 0 14px #58a6ff) drop-shadow(0 0 28px #58a6ff) drop-shadow(0 0 42px #58a6ff)} }
+@keyframes glowGreen { 0%,100%{filter:drop-shadow(0 0 5px #22c55e) drop-shadow(0 0 12px #22c55e)} 50%{filter:drop-shadow(0 0 14px #22c55e) drop-shadow(0 0 28px #22c55e)} }
+@keyframes glowGold  { 0%,100%{filter:drop-shadow(0 0 5px #FFD700) drop-shadow(0 0 12px #FFD700)} 50%{filter:drop-shadow(0 0 14px #FFD700) drop-shadow(0 0 28px #FFD700)} }
+@keyframes glowOrange{ 0%,100%{filter:drop-shadow(0 0 5px #f97316) drop-shadow(0 0 12px #f97316)} 50%{filter:drop-shadow(0 0 14px #f97316) drop-shadow(0 0 28px #f97316)} }
+@keyframes glowPurple{ 0%,100%{filter:drop-shadow(0 0 5px #a78bfa) drop-shadow(0 0 12px #a78bfa)} 50%{filter:drop-shadow(0 0 14px #a78bfa) drop-shadow(0 0 28px #a78bfa)} }
+@keyframes ringFill  { from{stroke-dashoffset:283}to{stroke-dashoffset:var(--d)} }
+@keyframes pulse     { 0%,100%{opacity:.6;r:6}50%{opacity:1;r:8} }
+@keyframes borderFlow{ 0%{stroke-dashoffset:3000}100%{stroke-dashoffset:0} }
+@keyframes scanMove  { 0%{transform:translateY(50px)}100%{transform:translateY(520px)} }
+@keyframes shimmer   { 0%{transform:translateX(-100%)}100%{transform:translateX(120%)} }
+@keyframes rgbBorder { 0%{stroke:#58a6ff}25%{stroke:#a78bfa}50%{stroke:#00d4ff}75%{stroke:#FFD700}100%{stroke:#58a6ff} }
+@keyframes dotBlink  { 0%,49%{fill:#22c55e}50%,100%{fill:#145214} }
+</style>
+<filter id="gBlue"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gGreen"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gGold"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gOrange"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gPurple"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gSoft"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<linearGradient id="bg1" x1="0" y1="0" x2=".2" y2="1">
+  <stop offset="0%" stop-color="#0b0f1e"/><stop offset="100%" stop-color="#060912"/>
+</linearGradient>
+<linearGradient id="barB" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#1d4ed8"/><stop offset="100%" stop-color="#58a6ff"/>
+</linearGradient>
+<linearGradient id="barG" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#15803d"/><stop offset="100%" stop-color="#22c55e"/>
+</linearGradient>
+<linearGradient id="barO" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#c2410c"/><stop offset="100%" stop-color="#f97316"/>
+</linearGradient>
+<linearGradient id="barP" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#a78bfa"/>
+</linearGradient>
+<linearGradient id="barGold" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#FFD700"/>
+</linearGradient>
+<clipPath id="clipMain"><rect width="900" height="520" rx="16"/></clipPath>
+</defs>
+
+<!-- Background -->
+<rect width="900" height="520" fill="url(#bg1)" rx="16"/>
+
+<!-- Grid lines -->
+<line x1="0" y1="0" x2="900" y2="0" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="40" x2="900" y2="40" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="80" x2="900" y2="80" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="120" x2="900" y2="120" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="160" x2="900" y2="160" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="200" x2="900" y2="200" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="240" x2="900" y2="240" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="280" x2="900" y2="280" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="320" x2="900" y2="320" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="360" x2="900" y2="360" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="400" x2="900" y2="400" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="440" x2="900" y2="440" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="0" y1="480" x2="900" y2="480" stroke="#ffffff" stroke-width=".3" opacity=".03"/>
+<line x1="0" y1="0" x2="0" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="60" y1="0" x2="60" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="120" y1="0" x2="120" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="180" y1="0" x2="180" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="240" y1="0" x2="240" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="300" y1="0" x2="300" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="360" y1="0" x2="360" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="420" y1="0" x2="420" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="480" y1="0" x2="480" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="540" y1="0" x2="540" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="600" y1="0" x2="600" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="660" y1="0" x2="660" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="720" y1="0" x2="720" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="780" y1="0" x2="780" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/><line x1="840" y1="0" x2="840" y2="520" stroke="#ffffff" stroke-width=".3" opacity=".03"/>
+
+<!-- Animated border -->
+<rect x="1.5" y="1.5" width="897" height="517" fill="none" rx="15"
+  stroke="#58a6ff" stroke-width="2" stroke-dasharray="3000"
+  style="animation:borderFlow 4s linear forwards, rgbBorder 5s linear 4s infinite"/>
+<rect x="3.5" y="3.5" width="893" height="513" fill="none" rx="14"
+  stroke="#a78bfa" stroke-width=".4" opacity=".15"/>
+
+<!-- Scan bar -->
+<rect width="900" height="2.5" fill="#58a6ff" opacity=".06" clip-path="url(#clipMain)"
+  style="animation:scanMove 8s linear infinite"/>
+
+<!-- Shimmer sweep -->
+<rect width="160" height="520" fill="white" opacity=".015" clip-path="url(#clipMain)"
+  style="animation:shimmer 6s ease-in-out infinite"/>
+
+<!-- ══ TITLE BAR ══════════════════════════════════════════ -->
+<rect x="0" y="0" width="900" height="56" fill="#080c18" rx="16"/>
+<rect x="0" y="44" width="900" height="12" fill="#080c18"/>
+<line x1="0" y1="56" x2="900" y2="56" stroke="#58a6ff" stroke-width=".8" opacity=".4"
+  style="animation:glowBlue 3s ease-in-out infinite"/>
+
+<circle cx="24" cy="28" r="8" fill="#ff5f56"/>
+<circle cx="46" cy="28" r="8" fill="#ffbd2e"/>
+<circle cx="68" cy="28" r="8" fill="#27c93f"/>
+
+<text x="450" y="33" text-anchor="middle" fill="#475569" font-family="'Courier New',Courier,monospace" font-size="13">
+  ajinkya@devbox:~/github-analytics-dashboard.json
+</text>
+
+<!-- Live dot -->
+<circle cx="820" cy="28" r="6" fill="#22c55e" style="animation:dotBlink 1.2s step-end infinite"/>
+<text x="830" y="33" font-family="'Courier New',Courier,monospace" font-size="11" fill="#22c55e">LIVE</text>
+
+<!-- ══ SECTION LABEL ══════════════════════════════════════ -->
+<text x="450" y="82" text-anchor="middle" fill="#58a6ff" font-family="Arial,sans-serif" font-size="18"
+  font-weight="700" letter-spacing="5"
+  style="animation:glowBlue 3s ease-in-out infinite" filter="url(#gBlue)">
+  ◈  DEVELOPER  STATISTICS  ◈
+</text>
+<line x1="60" y1="90" x2="840" y2="90" stroke="#1e293b" stroke-width="1"
+  stroke-dasharray="400" style="animation:drawLine 2s ease forwards"/>
+
+<!-- ══ METRIC CARDS (top row) ════════════════════════════ -->
+
+<!-- Card: PROJECTS -->
+<rect x="45" y="110" width="130" height="100" rx="12"
+  fill="#0d1117" stroke="#58a6ff" stroke-width="1.2" opacity="0"
+  style="animation:fadeUp .5s ease 0.00s both"/>
+<rect x="45" y="110" width="130" height="100" rx="12"
+  fill="#0d1117" stroke="#58a6ff" stroke-width="1.2"
+  style="animation:fadeUp .5s ease 0.00s both"/>
+<rect x="45" y="110" width="130" height="3" rx="2 2 0 0" fill="#58a6ff" opacity=".5"/>
+<text x="110" y="162" text-anchor="middle" fill="#58a6ff" font-family="Arial,sans-serif"
+  font-size="32" font-weight="900" filter="url(#gBlue)"
+  style="animation:fadeUp .5s ease 0.10s both, glowBlue 2.5s ease-in-out 0.30s infinite">
+  18+
+</text>
+<text x="110" y="188" text-anchor="middle" fill="#64748b" font-family="'Courier New',Courier,monospace" font-size="10" letter-spacing="2"
+  style="animation:fadeUp .5s ease 0.15s both">
+  PROJECTS
+</text>
+
+<!-- Card: YEARS EXP -->
+<rect x="205" y="110" width="130" height="100" rx="12"
+  fill="#0d1117" stroke="#22c55e" stroke-width="1.2" opacity="0"
+  style="animation:fadeUp .5s ease 0.15s both"/>
+<rect x="205" y="110" width="130" height="100" rx="12"
+  fill="#0d1117" stroke="#22c55e" stroke-width="1.2"
+  style="animation:fadeUp .5s ease 0.15s both"/>
+<rect x="205" y="110" width="130" height="3" rx="2 2 0 0" fill="#22c55e" opacity=".5"/>
+<text x="270" y="162" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif"
+  font-size="32" font-weight="900" filter="url(#gGreen)"
+  style="animation:fadeUp .5s ease 0.25s both, glowGreen 2.5s ease-in-out 0.45s infinite">
+  3+
+</text>
+<text x="270" y="188" text-anchor="middle" fill="#64748b" font-family="'Courier New',Courier,monospace" font-size="10" letter-spacing="2"
+  style="animation:fadeUp .5s ease 0.30s both">
+  YEARS EXP
+</text>
+
+<!-- Card: AI APPS -->
+<rect x="365" y="110" width="130" height="100" rx="12"
+  fill="#0d1117" stroke="#a78bfa" stroke-width="1.2" opacity="0"
+  style="animation:fadeUp .5s ease 0.30s both"/>
+<rect x="365" y="110" width="130" height="100" rx="12"
+  fill="#0d1117" stroke="#a78bfa" stroke-width="1.2"
+  style="animation:fadeUp .5s ease 0.30s both"/>
+<rect x="365" y="110" width="130" height="3" rx="2 2 0 0" fill="#a78bfa" opacity=".5"/>
+<text x="430" y="162" text-anchor="middle" fill="#a78bfa" font-family="Arial,sans-serif"
+  font-size="32" font-weight="900" filter="url(#gPurple)"
+  style="animation:fadeUp .5s ease 0.40s both, glowPurple 2.5s ease-in-out 0.60s infinite">
+  5+
+</text>
+<text x="430" y="188" text-anchor="middle" fill="#64748b" font-family="'Courier New',Courier,monospace" font-size="10" letter-spacing="2"
+  style="animation:fadeUp .5s ease 0.45s both">
+  AI APPS
+</text>
+
+<!-- Card: PRs MERGED -->
+<rect x="525" y="110" width="130" height="100" rx="12"
+  fill="#0d1117" stroke="#FFD700" stroke-width="1.2" opacity="0"
+  style="animation:fadeUp .5s ease 0.45s both"/>
+<rect x="525" y="110" width="130" height="100" rx="12"
+  fill="#0d1117" stroke="#FFD700" stroke-width="1.2"
+  style="animation:fadeUp .5s ease 0.45s both"/>
+<rect x="525" y="110" width="130" height="3" rx="2 2 0 0" fill="#FFD700" opacity=".5"/>
+<text x="590" y="162" text-anchor="middle" fill="#FFD700" font-family="Arial,sans-serif"
+  font-size="32" font-weight="900" filter="url(#gGold)"
+  style="animation:fadeUp .5s ease 0.55s both, glowGold 2.5s ease-in-out 0.75s infinite">
+  50+
+</text>
+<text x="590" y="188" text-anchor="middle" fill="#64748b" font-family="'Courier New',Courier,monospace" font-size="10" letter-spacing="2"
+  style="animation:fadeUp .5s ease 0.60s both">
+  PRs MERGED
+</text>
+
+<!-- Card: GOV COLLAB -->
+<rect x="685" y="110" width="130" height="100" rx="12"
+  fill="#0d1117" stroke="#f97316" stroke-width="1.2" opacity="0"
+  style="animation:fadeUp .5s ease 0.60s both"/>
+<rect x="685" y="110" width="130" height="100" rx="12"
+  fill="#0d1117" stroke="#f97316" stroke-width="1.2"
+  style="animation:fadeUp .5s ease 0.60s both"/>
+<rect x="685" y="110" width="130" height="3" rx="2 2 0 0" fill="#f97316" opacity=".5"/>
+<text x="750" y="162" text-anchor="middle" fill="#f97316" font-family="Arial,sans-serif"
+  font-size="32" font-weight="900" filter="url(#gOrange)"
+  style="animation:fadeUp .5s ease 0.70s both, glowOrange 2.5s ease-in-out 0.90s infinite">
+  1
+</text>
+<text x="750" y="188" text-anchor="middle" fill="#64748b" font-family="'Courier New',Courier,monospace" font-size="10" letter-spacing="2"
+  style="animation:fadeUp .5s ease 0.75s both">
+  GOV COLLAB
+</text>
+
+<!-- ══ SKILL BARS ══════════════════════════════════════════ -->
+<text x="60" y="222" font-family="Arial,sans-serif" font-size="13" fill="#94a3b8"
+  font-weight="600" letter-spacing="3"
+  style="animation:fadeUp .4s ease .5s both">SKILL PROFICIENCY</text>
+<line x1="60" y1="230" x2="420" y2="230"
+  stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Bar: React 19 / TypeScript -->
+  <text x="60" y="244" font-family="Arial,sans-serif" font-size="12.5" fill="#94a3b8"
+    style="animation:fadeUp .4s ease 0.60s both">React 19 / TypeScript</text>
+  <!-- Track -->
+  <rect x="60" y="248" width="360" height="16" rx="8"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".8"/>
+  <!-- Fill — animates from 0 to full width -->
+  <rect x="60" y="248" width="0" height="16" rx="8" fill="url(#barB)">
+    <animate attributeName="width" from="0" to="331" dur=".9s" begin="0.60s" fill="freeze"/>
+  </rect>
+  <!-- Glow dot at end -->
+  <circle cx="60" cy="256" r="5" fill="#58a6ff" opacity=".9">
+    <animate attributeName="cx" from="60" to="391" dur=".9s" begin="0.60s" fill="freeze"/>
+  </circle>
+  <!-- Percentage -->
+  <text x="430" y="260" font-family="'Courier New',Courier,monospace" font-size="12" fill="#58a6ff"
+    style="animation:fadeUp .4s ease 1.50s both">92%</text>
+
+  <!-- Bar: AI / Gemini / LLM APIs -->
+  <text x="60" y="280" font-family="Arial,sans-serif" font-size="12.5" fill="#94a3b8"
+    style="animation:fadeUp .4s ease 0.72s both">AI / Gemini / LLM APIs</text>
+  <!-- Track -->
+  <rect x="60" y="284" width="360" height="16" rx="8"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".8"/>
+  <!-- Fill — animates from 0 to full width -->
+  <rect x="60" y="284" width="0" height="16" rx="8" fill="url(#barP)">
+    <animate attributeName="width" from="0" to="306" dur=".9s" begin="0.72s" fill="freeze"/>
+  </rect>
+  <!-- Glow dot at end -->
+  <circle cx="60" cy="292" r="5" fill="#a78bfa" opacity=".9">
+    <animate attributeName="cx" from="60" to="366" dur=".9s" begin="0.72s" fill="freeze"/>
+  </circle>
+  <!-- Percentage -->
+  <text x="430" y="296" font-family="'Courier New',Courier,monospace" font-size="12" fill="#a78bfa"
+    style="animation:fadeUp .4s ease 1.62s both">85%</text>
+
+  <!-- Bar: Python / FastAPI -->
+  <text x="60" y="316" font-family="Arial,sans-serif" font-size="12.5" fill="#94a3b8"
+    style="animation:fadeUp .4s ease 0.84s both">Python / FastAPI</text>
+  <!-- Track -->
+  <rect x="60" y="320" width="360" height="16" rx="8"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".8"/>
+  <!-- Fill — animates from 0 to full width -->
+  <rect x="60" y="320" width="0" height="16" rx="8" fill="url(#barG)">
+    <animate attributeName="width" from="0" to="288" dur=".9s" begin="0.84s" fill="freeze"/>
+  </rect>
+  <!-- Glow dot at end -->
+  <circle cx="60" cy="328" r="5" fill="#22c55e" opacity=".9">
+    <animate attributeName="cx" from="60" to="348" dur=".9s" begin="0.84s" fill="freeze"/>
+  </circle>
+  <!-- Percentage -->
+  <text x="430" y="332" font-family="'Courier New',Courier,monospace" font-size="12" fill="#22c55e"
+    style="animation:fadeUp .4s ease 1.74s both">80%</text>
+
+  <!-- Bar: Blockchain / Web3 -->
+  <text x="60" y="352" font-family="Arial,sans-serif" font-size="12.5" fill="#94a3b8"
+    style="animation:fadeUp .4s ease 0.96s both">Blockchain / Web3</text>
+  <!-- Track -->
+  <rect x="60" y="356" width="360" height="16" rx="8"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".8"/>
+  <!-- Fill — animates from 0 to full width -->
+  <rect x="60" y="356" width="0" height="16" rx="8" fill="url(#barGold)">
+    <animate attributeName="width" from="0" to="270" dur=".9s" begin="0.96s" fill="freeze"/>
+  </rect>
+  <!-- Glow dot at end -->
+  <circle cx="60" cy="364" r="5" fill="#FFD700" opacity=".9">
+    <animate attributeName="cx" from="60" to="330" dur=".9s" begin="0.96s" fill="freeze"/>
+  </circle>
+  <!-- Percentage -->
+  <text x="430" y="368" font-family="'Courier New',Courier,monospace" font-size="12" fill="#FFD700"
+    style="animation:fadeUp .4s ease 1.86s both">75%</text>
+
+  <!-- Bar: Cybersecurity / OSINT -->
+  <text x="60" y="388" font-family="Arial,sans-serif" font-size="12.5" fill="#94a3b8"
+    style="animation:fadeUp .4s ease 1.08s both">Cybersecurity / OSINT</text>
+  <!-- Track -->
+  <rect x="60" y="392" width="360" height="16" rx="8"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".8"/>
+  <!-- Fill — animates from 0 to full width -->
+  <rect x="60" y="392" width="0" height="16" rx="8" fill="url(#barO)">
+    <animate attributeName="width" from="0" to="280" dur=".9s" begin="1.08s" fill="freeze"/>
+  </rect>
+  <!-- Glow dot at end -->
+  <circle cx="60" cy="400" r="5" fill="#f97316" opacity=".9">
+    <animate attributeName="cx" from="60" to="340" dur=".9s" begin="1.08s" fill="freeze"/>
+  </circle>
+  <!-- Percentage -->
+  <text x="430" y="404" font-family="'Courier New',Courier,monospace" font-size="12" fill="#f97316"
+    style="animation:fadeUp .4s ease 1.98s both">78%</text>
+
+  <!-- Bar: Docker / CI/CD / Linux -->
+  <text x="60" y="424" font-family="Arial,sans-serif" font-size="12.5" fill="#94a3b8"
+    style="animation:fadeUp .4s ease 1.20s both">Docker / CI/CD / Linux</text>
+  <!-- Track -->
+  <rect x="60" y="428" width="360" height="16" rx="8"
+    fill="#0d1117" stroke="#1e293b" stroke-width=".8"/>
+  <!-- Fill — animates from 0 to full width -->
+  <rect x="60" y="428" width="0" height="16" rx="8" fill="url(#barB)">
+    <animate attributeName="width" from="0" to="252" dur=".9s" begin="1.20s" fill="freeze"/>
+  </rect>
+  <!-- Glow dot at end -->
+  <circle cx="60" cy="436" r="5" fill="#58a6ff" opacity=".9">
+    <animate attributeName="cx" from="60" to="312" dur=".9s" begin="1.20s" fill="freeze"/>
+  </circle>
+  <!-- Percentage -->
+  <text x="430" y="440" font-family="'Courier New',Courier,monospace" font-size="12" fill="#58a6ff"
+    style="animation:fadeUp .4s ease 2.10s both">70%</text>
+
+<!-- ══ CIRCULAR RINGS ════════════════════════════════════ -->
+<text x="775" y="230" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#94a3b8"
+  font-weight="600" letter-spacing="3"
+  style="animation:fadeUp .4s ease .5s both">METRICS</text>
+<line x1="690" y1="238" x2="860" y2="238" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Ring: APPS -->
+  <circle cx="730" cy="295" r="52" fill="#0d1117" stroke="#1e293b" stroke-width="6"/>
+  <circle cx="730" cy="295" r="52" fill="none" stroke="#22c55e" stroke-width="6"
+    stroke-linecap="round" stroke-dasharray="326" stroke-dashoffset="326"
+    transform="rotate(-90 730 295)" filter="url(#gGreen)"
+    style="animation:glowGreen 3s ease-in-out infinite">
+    <animate attributeName="stroke-dashoffset" from="326" to="29"
+      dur="1.2s" begin="0.8s" fill="freeze"/>
+  </circle>
+  <text x="730" y="302" text-anchor="middle" fill="#22c55e" font-family="Arial,sans-serif"
+    font-size="22" font-weight="900" filter="url(#gGreen)"
+    style="animation:fadeUp .4s ease 0.8s both">18+</text>
+  <text x="730" y="317" text-anchor="middle" fill="#64748b" font-family="'Courier New',Courier,monospace"
+    font-size="9" letter-spacing="1">APPS</text>
+
+  <!-- Ring: YEARS -->
+  <circle cx="820" cy="295" r="52" fill="#0d1117" stroke="#1e293b" stroke-width="6"/>
+  <circle cx="820" cy="295" r="52" fill="none" stroke="#58a6ff" stroke-width="6"
+    stroke-linecap="round" stroke-dasharray="326" stroke-dashoffset="326"
+    transform="rotate(-90 820 295)" filter="url(#gBlue)"
+    style="animation:glowBlue 3s ease-in-out infinite">
+    <animate attributeName="stroke-dashoffset" from="326" to="71"
+      dur="1.2s" begin="0.8s" fill="freeze"/>
+  </circle>
+  <text x="820" y="302" text-anchor="middle" fill="#58a6ff" font-family="Arial,sans-serif"
+    font-size="22" font-weight="900" filter="url(#gBlue)"
+    style="animation:fadeUp .4s ease 0.8s both">3+</text>
+  <text x="820" y="317" text-anchor="middle" fill="#64748b" font-family="'Courier New',Courier,monospace"
+    font-size="9" letter-spacing="1">YEARS</text>
+
+  <!-- Ring: PRs -->
+  <circle cx="730" cy="420" r="52" fill="#0d1117" stroke="#1e293b" stroke-width="6"/>
+  <circle cx="730" cy="420" r="52" fill="none" stroke="#FFD700" stroke-width="6"
+    stroke-linecap="round" stroke-dasharray="326" stroke-dashoffset="326"
+    transform="rotate(-90 730 420)" filter="url(#gGold)"
+    style="animation:glowGold 3s ease-in-out infinite">
+    <animate attributeName="stroke-dashoffset" from="326" to="43"
+      dur="1.2s" begin="0.8s" fill="freeze"/>
+  </circle>
+  <text x="730" y="427" text-anchor="middle" fill="#FFD700" font-family="Arial,sans-serif"
+    font-size="22" font-weight="900" filter="url(#gGold)"
+    style="animation:fadeUp .4s ease 0.8s both">50+</text>
+  <text x="730" y="442" text-anchor="middle" fill="#64748b" font-family="'Courier New',Courier,monospace"
+    font-size="9" letter-spacing="1">PRs</text>
+
+  <!-- Ring: AI APPS -->
+  <circle cx="820" cy="420" r="52" fill="#0d1117" stroke="#1e293b" stroke-width="6"/>
+  <circle cx="820" cy="420" r="52" fill="none" stroke="#a78bfa" stroke-width="6"
+    stroke-linecap="round" stroke-dasharray="326" stroke-dashoffset="326"
+    transform="rotate(-90 820 420)" filter="url(#gPurple)"
+    style="animation:glowPurple 3s ease-in-out infinite">
+    <animate attributeName="stroke-dashoffset" from="326" to="57"
+      dur="1.2s" begin="0.8s" fill="freeze"/>
+  </circle>
+  <text x="820" y="427" text-anchor="middle" fill="#a78bfa" font-family="Arial,sans-serif"
+    font-size="22" font-weight="900" filter="url(#gPurple)"
+    style="animation:fadeUp .4s ease 0.8s both">5+</text>
+  <text x="820" y="442" text-anchor="middle" fill="#64748b" font-family="'Courier New',Courier,monospace"
+    font-size="9" letter-spacing="1">AI APPS</text>
+
+<!-- ══ TECH BADGES ROW ════════════════════════════════════ -->
+<text x="60" y="430" font-family="Arial,sans-serif" font-size="13" fill="#94a3b8"
+  font-weight="600" letter-spacing="3"
+  style="animation:fadeUp .4s ease .5s both">TECH STACK</text>
+<line x1="60" y1="438" x2="420" y2="438" stroke="#1e293b" stroke-width="1"/>
+
+  <rect x="40" y="448" width="44" height="36" rx="8"
+    fill="#0d1117" stroke="#3178c6" stroke-width="1.2"
+    style="animation:fadeUp .4s ease 0.90s both"/>
+  <text x="62" y="471" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#3178c6"
+    style="animation:fadeUp .4s ease 0.90s both">TS</text>
+
+  <rect x="86" y="448" width="44" height="36" rx="8"
+    fill="#0d1117" stroke="#61dafb" stroke-width="1.2"
+    style="animation:fadeUp .4s ease 0.98s both"/>
+  <text x="108" y="471" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#61dafb"
+    style="animation:fadeUp .4s ease 0.98s both">⚛</text>
+
+  <rect x="132" y="448" width="44" height="36" rx="8"
+    fill="#0d1117" stroke="#3776ab" stroke-width="1.2"
+    style="animation:fadeUp .4s ease 1.06s both"/>
+  <text x="154" y="471" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#3776ab"
+    style="animation:fadeUp .4s ease 1.06s both">🐍</text>
+
+  <rect x="178" y="448" width="44" height="36" rx="8"
+    fill="#0d1117" stroke="#e11d48" stroke-width="1.2"
+    style="animation:fadeUp .4s ease 1.14s both"/>
+  <text x="200" y="471" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#e11d48"
+    style="animation:fadeUp .4s ease 1.14s both">🔐</text>
+
+  <rect x="224" y="448" width="44" height="36" rx="8"
+    fill="#0d1117" stroke="#627EEA" stroke-width="1.2"
+    style="animation:fadeUp .4s ease 1.22s both"/>
+  <text x="246" y="471" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#627EEA"
+    style="animation:fadeUp .4s ease 1.22s both">⛓</text>
+
+  <rect x="270" y="448" width="44" height="36" rx="8"
+    fill="#0d1117" stroke="#8E75B2" stroke-width="1.2"
+    style="animation:fadeUp .4s ease 1.30s both"/>
+  <text x="292" y="471" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#8E75B2"
+    style="animation:fadeUp .4s ease 1.30s both">🤖</text>
+
+  <rect x="316" y="448" width="44" height="36" rx="8"
+    fill="#0d1117" stroke="#2496ed" stroke-width="1.2"
+    style="animation:fadeUp .4s ease 1.38s both"/>
+  <text x="338" y="471" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#2496ed"
+    style="animation:fadeUp .4s ease 1.38s both">🐳</text>
+
+  <rect x="362" y="448" width="44" height="36" rx="8"
+    fill="#0d1117" stroke="#f59e0b" stroke-width="1.2"
+    style="animation:fadeUp .4s ease 1.46s both"/>
+  <text x="384" y="471" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#f59e0b"
+    style="animation:fadeUp .4s ease 1.46s both">⚡</text>
+
+<!-- ══ BOTTOM BAR ════════════════════════════════════════ -->
+<line x1="16" y1="492" x2="884" y2="492" stroke="#1e293b" stroke-width=".8"/>
+<circle cx="24" cy="506" r="5" fill="#22c55e"
+  style="animation:dotBlink 1.2s step-end infinite"/>
+<text x="36" y="511" font-family="'Courier New',Courier,monospace" font-size="11" fill="#22c55e">ONLINE</text>
+<text x="450" y="511" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#334155">
+  ajinkyachalke008 · Full-Stack · AI · Cybersec
+</text>
+<text x="880" y="511" text-anchor="end" font-family="'Courier New',Courier,monospace" font-size="11" fill="#58a6ff">v3.0 ◈</text>
+
+<!-- Corner decorations -->
+<text x="60" y="511" font-family="'Courier New',Courier,monospace" font-size="9" fill="#1e293b">last updated: 2026</text>
+
+</svg>
