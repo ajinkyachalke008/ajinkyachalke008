@@ -1,0 +1,21 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+@keyframes rgbFrame { 0%{stroke:#58a6ff} 50%{stroke:#FFD700} 100%{stroke:#58a6ff} }
+@keyframes cornerPulse { 0%,100%{opacity:.6;r:4} 50%{opacity:1;r:6} }
+@keyframes scan { 0%{transform:translateY(0)} 100%{transform:translateY(200px)} }
+</style>
+</defs>
+<rect width="900" height="200" fill="none" rx="12"/>
+<rect x="1" y="1" width="898" height="198" fill="none" rx="11"
+  stroke="#58a6ff" stroke-width="1.8"
+  style="animation:rgbFrame 3s ease-in-out infinite"/>
+<rect x="3" y="3" width="894" height="194" fill="none" rx="10"
+  stroke="#FFD700" stroke-width=".4" opacity=".2"/>
+<circle cx="12" cy="12" r="4" fill="#58a6ff" style="animation:cornerPulse 2s ease-in-out infinite"/>
+<circle cx="888" cy="12" r="4" fill="#FFD700" style="animation:cornerPulse 2s ease-in-out infinite .5s"/>
+<circle cx="12" cy="188" r="4" fill="#FFD700" style="animation:cornerPulse 2s ease-in-out infinite 1s"/>
+<circle cx="888" cy="188" r="4" fill="#58a6ff" style="animation:cornerPulse 2s ease-in-out infinite 1.5s"/>
+<rect width="900" height="1.5" fill="#58a6ff" opacity=".05"
+  style="animation:scan 8s linear infinite"/>
+</svg>
