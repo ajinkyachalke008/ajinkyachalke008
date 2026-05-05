@@ -244,48 +244,36 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/main/analytics_header.svg" width="100%" alt="GitHub Analytics"/>
+<!-- ══ CUSTOM ANIMATED STATS INFOGRAPHIC ══════════════════════ -->
+<img src="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/main/stats_infographic.svg" width="100%" alt="Stats Infographic"/>
 
 <br/>
 
-<!-- ── Stats Card ──────────────────────────────────────── -->
+<!-- ══ GITHUB STATS CARD ══════════════════════════════════════ -->
 <a href="https://github.com/ajinkyachalke008">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=ajinkyachalke008&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=FFD700&text_color=c9d1d9&rank_icon=github&show=reviews,discussions_started,prs_merged,prs_merged_percentage&custom_title=⚡%20Ajinkya%20Chalke%27s%20Dev%20Stats" width="100%"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=ajinkyachalke008&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=FFD700&text_color=c9d1d9&rank_icon=github&show=reviews,prs_merged,prs_merged_percentage&custom_title=⚡%20Ajinkya%20Chalke%27s%20GitHub%20Stats&border_radius=12" width="100%"/>
 </a>
 
 <br/>
 
-<!-- ── Streak ─────────────────────────────────────────── -->
+<!-- ══ STREAK ════════════════════════════════════════════════ -->
 <a href="https://github.com/ajinkyachalke008">
   <img src="https://streak-stats.demolab.com/?user=ajinkyachalke008&theme=github-dark-blue&hide_border=true&background=0d1117&sideNums=58a6ff&sideLabels=94a3b8&dates=94a3b8&stroke=58a6ff&ring=FFD700&fire=FFD700&currStreakLabel=58a6ff&currStreakNum=e2e8f0&border_radius=12" width="100%"/>
 </a>
 
 <br/>
 
-<!-- ── Side by side: Languages + Extra Stats ─────────── -->
+<!-- ══ LANGUAGES + SUMMARY SIDE BY SIDE ══════════════════════ -->
 <a href="https://github.com/ajinkyachalke008">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ajinkyachalke008&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=10&custom_title=💻%20Most%20Used%20Languages&border_radius=12" width="49%"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ajinkyachalke008&layout=donut-vertical&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&langs_count=10&custom_title=💻%20Language%20Breakdown&border_radius=12" width="38%"/>
 </a>
 <a href="https://github.com/ajinkyachalke008">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/wakatime?username=ajinkyachalke008&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9&custom_title=⏱️%20Coding%20Activity&border_radius=12" width="49%"/>
-</a>
-
-<br/>
-
-<!-- ── Trophies ───────────────────────────────────────── -->
-<a href="https://github.com/ajinkyachalke008">
-  <img src="https://github-profile-trophy.vercel.app/?username=ajinkyachalke008&theme=radical&no-bg=true&no-frame=true&margin-w=8&margin-h=8&column=7&title=Stars,Followers,Commits,Repositories,PullRequest,Issues,Reviews" width="100%"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ajinkyachalke008&theme=github_dark" width="60%"/>
 </a>
 
 <br/>
 
-<!-- ── Summary card ──────────────────────────────────── -->
-<a href="https://github.com/ajinkyachalke008">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ajinkyachalke008&theme=github_dark" width="100%"/>
-</a>
-
-<br/>
-
+<!-- ══ THREE-COLUMN SUMMARY CARDS ════════════════════════════ -->
 <table>
 <tr>
 <td width="33%">
@@ -306,6 +294,13 @@
 </tr>
 </table>
 
+<br/>
+
+<!-- ══ TROPHIES ═══════════════════════════════════════════════ -->
+<a href="https://github.com/ajinkyachalke008">
+  <img src="https://github-profile-trophy.vercel.app/?username=ajinkyachalke008&theme=radical&no-bg=true&no-frame=true&margin-w=8&margin-h=8&column=7&title=Stars,Followers,Commits,Repositories,PullRequest,Issues,Reviews" width="100%"/>
+</a>
+
 </div>
 
 ---
@@ -314,32 +309,34 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/main/activity_header.svg" width="100%" alt="Contribution Activity"/>
+<!-- ══ CUSTOM ANIMATED ACTIVITY INFOGRAPHIC ═══════════════════ -->
+<img src="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/main/activity_infographic.svg" width="100%" alt="Activity Infographic"/>
 
 <br/>
 
-<!-- ── Activity Graph ──────────────────────────────────── -->
+<!-- ══ LIVE ACTIVITY GRAPH ════════════════════════════════════ -->
 <a href="https://github.com/ajinkyachalke008">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ajinkyachalke008&theme=github-compact&bg_color=0d1117&color=58a6ff&line=FFD700&point=e2e8f0&area=true&area_color=58a6ff&hide_border=true&radius=12&custom_title=🔥%20Ajinkya%27s%20Contribution%20Graph%20—%20Every%20Commit%20Counts" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ajinkyachalke008&theme=github-compact&bg_color=0d1117&color=22c55e&line=00FF41&point=ffffff&area=true&area_color=22c55e&hide_border=true&radius=12&custom_title=🔥%20Every%20Commit%20Counts%20—%20Ajinkya's%20Contribution%20Graph" width="100%"/>
 </a>
 
 <br/>
 
-<!-- ── Contribution stats row ────────────────────────── -->
+<!-- ══ STATS + THIS YEAR SIDE BY SIDE ════════════════════════ -->
 <a href="https://github.com/ajinkyachalke008">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ajinkyachalke008&theme=github_dark" width="49%"/>
 </a>
 <a href="https://github.com/ajinkyachalke008">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=ajinkyachalke008&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=22c55e&icon_color=22c55e&text_color=86efac&count_private=true&show=contribs_last_year&custom_title=📅%20This%20Year%27s%20Activity&border_radius=12" width="49%"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=ajinkyachalke008&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=22c55e&icon_color=22c55e&text_color=86efac&count_private=true&custom_title=📅%20This%20Year's%20Activity&border_radius=12" width="49%"/>
 </a>
 
 <br/>
 
-<!-- Animated contribution pulse badges -->
-![Commits](https://img.shields.io/badge/dynamic/json?color=58a6ff&label=Total%20Commits&query=totalCommitContributions&url=https://github-contributions-api.jogruber.de/v4/ajinkyachalke008&style=for-the-badge&labelColor=0a0e1a)
-![PRs](https://img.shields.io/github/issues-pr/ajinkyachalke008/cryptoguard?color=22c55e&label=Open%20PRs&style=for-the-badge&labelColor=0a0e1a)
-![Stars](https://img.shields.io/github/stars/ajinkyachalke008?color=FFD700&label=Total%20Stars&style=for-the-badge&labelColor=0a0e1a&affiliations=OWNER)
-![Repos](https://img.shields.io/badge/Public%20Repos-18%2B-a78bfa?style=for-the-badge&labelColor=0a0e1a)
+<!-- ══ LIVE METRIC BADGES ════════════════════════════════════ -->
+![Stars](https://img.shields.io/github/stars/ajinkyachalke008?color=FFD700&label=⭐%20Total%20Stars&style=for-the-badge&labelColor=0a0e1a&affiliations=OWNER)
+![Repos](https://img.shields.io/badge/📦%20Public%20Repos-18%2B-a78bfa?style=for-the-badge&labelColor=0a0e1a)
+![Followers](https://img.shields.io/github/followers/ajinkyachalke008?color=22c55e&label=👥%20Followers&style=for-the-badge&labelColor=0a0e1a)
+![PRs](https://img.shields.io/badge/🔀%20PRs%20Merged-50%2B-58a6ff?style=for-the-badge&labelColor=0a0e1a)
+![Collab](https://img.shields.io/badge/🚔%20Gov%20Collab-Pune%20Police-e11d48?style=for-the-badge&labelColor=0a0e1a)
 
 </div>
 
