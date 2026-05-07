@@ -53,6 +53,19 @@
 
 <div align="center">
 
+<!-- 🐍 SNAKE EATING CONTRIBUTIONS -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/output/github-snake-dark-green.svg" />
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/output/github-snake.svg" />
+  <img alt="🐍 Snake eating Ajinkya's contributions"
+    src="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/output/github-snake-dark-green.svg"
+    width="100%" />
+</picture>
+
+<br/>
+
 <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=900&size=16&duration=1800&pause=600&color=00FF41&center=true&vCenter=true&width=680&lines=%5BSYSTEM+BOOT%5D+Initializing+developer+profile...;%5BSCAN%5D+Loading+Ajinkya+Chalke...;%5BSTATUS%5D+Full-Stack+%2B+AI+Engineer+%E2%9C%85;%5BCLEARANCE%5D+Cybersecurity+%7C+Blockchain+%7C+AI%2FML+%F0%9F%94%90;%5BMISSION%5D+Building+real-world+AI+solutions+%F0%9F%9A%80;%5BACCESS+GRANTED%5D+Welcome+to+my+profile+%F0%9F%8C%90" />
 
 <br/><br/>
