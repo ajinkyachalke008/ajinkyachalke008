@@ -59,9 +59,11 @@
     srcset="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/output/github-snake-dark-green.svg" />
   <source media="(prefers-color-scheme: light)"
     srcset="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/output/github-snake.svg" />
-  <img alt="🐍 Snake eating Ajinkya's contributions"
+  <img
     src="https://raw.githubusercontent.com/ajinkyachalke008/ajinkyachalke008/output/github-snake-dark-green.svg"
-    width="100%" />
+    alt="🐍 Snake eating Ajinkya's contributions"
+    width="100%"
+  />
 </picture>
 
 <br/>
